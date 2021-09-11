@@ -1,11 +1,12 @@
 <?php
-include "config.php";
+include_once "../../config.php";
 
 $return = [];
-$sql = 'SELECT * FROM user WHERE id="' . $_GET["id"] . '";';
+$sql = 'SELECT * FROM user WHERE email="' . $_GET["email"] . '";';
 if ($result = mysqli_query($link, $sql)) {
     while ($row = mysqli_fetch_row($result)) {
-        $return = ["id" => checkVal($row[0]),
+        if(password_verify($_GET["password"], $row[3])){
+            $return = ["id" => checkVal($row[0]),
             "username" => checkVal($row[1]),
             "email" => checkVal($row[2]),
             "password" => checkVal($row[3]),
@@ -19,6 +20,8 @@ if ($result = mysqli_query($link, $sql)) {
             "status" => checkVal($row[11]),
             "phone" => checkVal($row[12])];
             echo json_encode($return, JSON_PRETTY_PRINT, JSON_FORCE_OBJECT);
+        }
+        else{echo "error";}
     }
     mysqli_free_result($result);
 }

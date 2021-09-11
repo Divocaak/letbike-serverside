@@ -1,5 +1,5 @@
 <?php
-include "config.php";
+include_once "../../config.php";
 
 $resultArr = [];
 $sql = 'SELECT id, seller_id, name, description, price, score, paid, date_start, date_end, imgs, status, sold_to, param

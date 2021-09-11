@@ -1,14 +1,15 @@
 <?php
-include "config.php";
+include_once "../config.php";
 
 $resultArr = [];
-$sql = 'SELECT value, text FROM rating WHERE user_id=' . $_GET["userId"] . ';';
+$sql = 'SELECT * FROM article;';
 
 if ($result = mysqli_query($link, $sql)) {
     while ($row = mysqli_fetch_row($result)) {
         $resultArr[] = [
-            "ratingVal" => checkVal($row[0]),
-            "ratingText" => checkVal($row[1])
+            "id" => $row[0],
+            "title" => $row[1],
+            "added" => $row[2]
         ];
     }
     mysqli_free_result($result);

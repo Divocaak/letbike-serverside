@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: text/html; charset=utf-8");
 
-include "config.php";
+include_once "../../config.php";
 
 $itemParamKey = substr(hash('ripemd160', strval(intval($_GET["seller_id"]) * intval($_GET["price"])) . $_GET["name"]), 0, 32);
 

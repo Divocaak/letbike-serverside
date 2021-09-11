@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: text/html; charset=utf-8");
 
-include "config.php";
+include_once "../../config.php";
 
 $sql = 'UPDATE user SET f_name="' . $_GET["fName"] . '", l_name="' . $_GET["lName"] . '",
     phone=' . $_GET["phone"] . ', address_a="' . $_GET["addA"] . '", address_b="' . $_GET["addB"] . '",

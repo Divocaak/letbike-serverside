@@ -3,7 +3,7 @@ $imgCount = intval($_POST["imgCount"]);
 $imgFolder = $_POST['imgFolder'];
 $folderIdentificator = $_POST['folderIdentificator'];
 
-$pathToImages = "imgs/" . $imgFolder . "/" . $folderIdentificator;
+$pathToImages = "../../imgs/" . $imgFolder . "/" . $folderIdentificator;
 if (!file_exists($pathToImages)) {
   mkdir($pathToImages, 0777, true);
 }

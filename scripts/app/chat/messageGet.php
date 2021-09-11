@@ -1,5 +1,5 @@
 <?php
-include "config.php";
+include_once "../../config.php";
 
 $from = $_GET["from"];
 $to = $_GET["to"];
@@ -15,5 +15,5 @@ if ($result = mysqli_query($link, $sql)) {
 }
 mysqli_close($link);
 
-echo json_encode($resultArr, JSON_PRETTY_PRINT, JSON_FORCE_OBJECT);
+echo json_encode($resultArr);
 ?>

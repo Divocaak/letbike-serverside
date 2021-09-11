@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: text/html; charset=utf-8");
 
-include "config.php";
+include_once "../../config.php";
 
 $sql = 'UPDATE item SET status=' . $_GET["status"] . ', sold_to=' . $_GET["soldTo"] . ' WHERE id=' . $_GET["id"] . ';';
 

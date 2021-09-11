@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: text/html; charset=utf-8");
 
-include "config.php";
+include_once "../../config.php";
 
 $sql = 'INSERT INTO rating (user_id, value, text ) VALUES
 ('. $_GET["userId"] . ', '. $_GET["ratingVal"] . ', "' . $_GET["ratingText"] . '");';
