@@ -36,9 +36,36 @@ for($i = 0; $i < count($resultArr); $i++) {
     }
 }
 
+$filteredItems = [];
+if(count($_GET) > 3){
+    $filters = [];
+    foreach($_GET as $key => $value){
+        if($key != "status" && $key != "soldTo" && $key != "id"){
+            $filters[] = [$key, $value];
+        } 
+    }
+
+    foreach($resultArr as $item){
+        $canReturn = false;
+        foreach($filters as $filter){
+            if(!isset($item[$filter[0]]) || $item[$filter[0]] == $filter[1]){
+                $canReturn = true;
+            } else if (isset($item[$filter[0]]) || $item[$filter[0]] != $filter[1]){
+                $canReturn = false;
+            }
+        }
+        
+        if($canReturn){
+            $filteredItems[] = $item;
+        }
+    }
+} else {
+    $filteredItems = $resultArr;
+}
+
 mysqli_close($link);
 
-echo json_encode($resultArr);
+echo json_encode($filteredItems);
 
 function resultCheck($res){
     return (($res == "") ? "-1" : $res);

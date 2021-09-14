@@ -21,14 +21,18 @@ if($canInsertParams){
     } 
   }
 
-  if (mysqli_multi_query($link, $sql)) {
-    echo "Inzerát byl úspěšně uložen.";
+  if($sql != ""){
+    if (mysqli_multi_query($link, $sql)) {
+      echo "Inzerát s parametry byl úspěšně uložen.";
+    } else {
+      echo "Někde se stala chyba, zkuste to znovu později. (0)";
+    }
   } else {
-    echo "Někde se stala chyba, zkuste to prosím později.";
+    echo "Inzerát byl úspěšně uložen.";
   }
   mysqli_close($link);
 }
-else{
-  echo "Někde se stala chyba, zkuste to prosím později.";
+else {
+  echo "Někde se stala chyba, zkuste to znovu později. (1)";
 }
 ?>

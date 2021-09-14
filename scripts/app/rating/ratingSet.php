@@ -7,7 +7,7 @@ $sql = 'INSERT INTO rating (user_id, value, text ) VALUES
 ('. $_GET["userId"] . ', '. $_GET["ratingVal"] . ', "' . $_GET["ratingText"] . '");';
 
 if (mysqli_query($link, $sql)) {
-  echo "Ohodnoceno.";
+  echo "Uživatel byl ohodnocen.";
 } else {
   echo "Někde se stala chyba, zkuste to prosím později.";
 }

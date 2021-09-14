@@ -20,7 +20,7 @@ if(password_verify($passCurr, $passSaved)){
     $sql = 'UPDATE user SET password="' . password_hash($passNew, PASSWORD_DEFAULT) . '" WHERE id=' . $id . ';';
     if ($result = mysqli_query($link, $sql)) {
         if (mysqli_query($link, $sql)) {
-            echo "Údaje byly změněny.";
+            echo "Heslo bylo změněno.";
         } else {
             echo "Někde se stala chyba, zkuste to prosím později.";
         }
