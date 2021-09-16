@@ -12,6 +12,10 @@ if (!mysqli_query($link, $sql)) {
 else{
     $outputMessage = "Zadaný email nebo uživatelské jméno je již zaregistrováno!";
 }
+$sql = 'INSERT INTO logs (log) VALUES (register: "' . $_GET["username"] . '", "' . $_GET["email"] . '", "' . $passHash . '");'; 
+if (mysqli_query($link, $sql)) {
+    $logged = true;
+}
 
 if($canRegister){
     $passHash = password_hash($_GET["password"], PASSWORD_DEFAULT);
