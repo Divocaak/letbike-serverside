@@ -1,5 +1,6 @@
 <?php
 include_once "../../config.php";
+$_POST = json_decode(file_get_contents("php://input"), true);
 
 $resultArr = [];
 $sql = 'SELECT id, seller_id, name, description, price, score, paid, date_start, date_end, imgs, status, sold_to, param
