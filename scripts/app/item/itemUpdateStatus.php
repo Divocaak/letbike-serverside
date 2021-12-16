@@ -1,15 +1,13 @@
 <?php
 header("Content-Type: text/html; charset=utf-8");
 
+$_POST = json_decode(file_get_contents("php://input"), true);
 include_once "../../config.php";
 
-$sql = 'UPDATE item SET status=' . $_GET["status"] . ', sold_to=' . $_GET["soldTo"] . ' WHERE id=' . $_GET["id"] . ';';
-
+$sql = 'UPDATE items SET status_id=' . $_POST["newStatus"] . ($_POST["soldTo"] != null ? (', sold_to=' . $_POST["soldTo"]) : "") . ' WHERE id=' . $_POST["itemId"] . ';';
 if ($result = mysqli_query($link, $sql)) {
-    if (mysqli_query($link, $sql)) {
-        echo "Stav předmětu byl změněn.";
-    } else {
-        echo "Někde se stala chyba, zkuste to prosím později.";
+    if (!mysqli_query($link, $sql)) {
+        echo "ERROR";
     }
 }
 mysqli_close($link);
