@@ -1,38 +1,24 @@
 <?php
-header("Content-Type: text/html; charset=utf-8");
-
 include_once "../../config.php";
 
-$itemParamKey = substr(hash('ripemd160', strval(intval($_GET["seller_id"]) * intval($_GET["price"])) . $_GET["name"]), 0, 32);
-
-$sql = 'INSERT INTO item (seller_id, name, description, price, imgs, status, sold_to, param)
-VALUES (' . $_GET["seller_id"] . ', "' . $_GET["name"] . '", "' . $_GET["description"] . '", "' . $_GET["price"] . '", ' . $_GET["images"] . ', 0, -1, "' . $itemParamKey . '")';
-
-$canInsertParams = false;
-if (mysqli_query($link, $sql)) {
-  $canInsertParams = true;
-}
-
-if($canInsertParams){
+$_POST = json_decode(file_get_contents("php://input"), true);
+$sql = "INSERT INTO items (seller_id, name, description, price, imgs, status_id)
+VALUES ('" . $_POST["userId"] . "', '" . $_POST["name"] . "', '" . $_POST["desc"] . "', " . $_POST["price"] . ", '" . $_POST["imgs"] . "', 1);";
+if (!mysqli_query($link, $sql)) {
+  echo "ERROR";
+} else {
   $sql = "";
-  foreach($_GET as $key => $value){
-    if($key != "seller_id" && $key != "name" && $key != "description" && $key != "price" && $key != "images"){
-      $sql .= 'INSERT INTO param (item, name, value) VALUES ("' . $itemParamKey . '", "' . $key . '", "' . $value . '");';
-    } 
-  }
+  foreach ($_POST["params"] as $key => $value) {
+    $sql .= '(' . mysqli_insert_id($link) . ', "' . $key . '", "' . $value . '")' . ($key === array_key_last($_POST["params"]) ? ";" : ", ");
+  };
 
-  if($sql != ""){
-    if (mysqli_multi_query($link, $sql)) {
-      echo "Inzerát s parametry byl úspěšně uložen.";
-    } else {
-      echo "Někde se stala chyba, zkuste to znovu později. (0)";
-    }
+  if ($sql == "") {
+    echo "ERROR";
   } else {
-    echo "Inzerát byl úspěšně uložen.";
+    $sql = "INSERT INTO params (item_id, name, value) VALUES " . $sql;
+    if (!mysqli_query($link, $sql)) {
+      echo "ERROR";
+    }
   }
-  mysqli_close($link);
 }
-else {
-  echo "Někde se stala chyba, zkuste to znovu později. (1)";
-}
-?>
+mysqli_close($link);

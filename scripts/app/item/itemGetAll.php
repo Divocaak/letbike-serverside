@@ -1,73 +1,60 @@
 <?php
 include_once "../../config.php";
+$_POST = json_decode(file_get_contents("php://input"), true);
 
-$resultArr = [];
-$sql = 'SELECT id, seller_id, name, description, price, score, paid, date_start, date_end, imgs, status, sold_to, param
-    FROM item WHERE status=' . $_GET["status"] . ' AND sold_to=' . $_GET["soldTo"] . ' AND seller_id=' . $_GET["id"] . ';';
-
+$items = [];
+$sql = "SELECT id, seller_id, sold_to, name, description, price, date_added, date_sold, imgs, status_id 
+    FROM items WHERE status_id=" . $_POST["status"] .
+    ($_POST["sellerId"] != null ? (" AND seller_id='" . $_POST["sellerId"] . "'") : "") .
+    ($_POST["soldTo"] != null ? (" AND sold_to='" . $_POST["soldTo"] . "'") : "") . ";";
 if ($result = mysqli_query($link, $sql)) {
     while ($row = mysqli_fetch_row($result)) {
-        $resultArr[] = [
-            "id" => resultCheck($row[0]),
-            "sellerId" => resultCheck($row[1]),
-            "name" => resultCheck($row[2]),
-            "description" => resultCheck($row[3]),
-            "price" => resultCheck($row[4]),
-            "score" => resultCheck($row[5]),
-            "paid" => resultCheck($row[6]),
-            "dateStart" => resultCheck($row[7]),
-            "dateEnd" => resultCheck($row[8]),
-            "imgs" => resultCheck($row[9]),
-            "status" => resultCheck($row[10]),
-            "soldTo" => resultCheck($row[11]),
-            "param" => resultCheck($row[12])
+        $items[] = [
+            "id" => $row[0],
+            "sellerId" => $row[1],
+            "soldTo" => $row[2],
+            "name" => $row[3],
+            "description" => $row[4],
+            "price" => $row[5],
+            "dateStart" => $row[6],
+            "dateEnd" => $row[7],
+            "imgs" => $row[8],
+            "status" => $row[9],
         ];
     }
     mysqli_free_result($result);
-}
 
-for($i = 0; $i < count($resultArr); $i++) {
-    $sql = 'SELECT item, name, value FROM param WHERE item="' . $resultArr[$i]["param"] . '";';
-    if ($result = mysqli_query($link, $sql)) {
-        while ($row = mysqli_fetch_row($result)) {
-            $resultArr[$i][$row[1]] = $row[2];
+    for($i = 0; $i < count($items); $i++){
+        $sql = 'SELECT name, value FROM params WHERE item_id=' . $items[$i]["id"] . ';';
+        if ($result = mysqli_query($link, $sql)) {
+            while ($row = mysqli_fetch_row($result)) {
+                $items[$i]["params"][$row[0]] = $row[1];
+            }
+            mysqli_free_result($result);
         }
-        mysqli_free_result($result);
     }
-}
-
-$filteredItems = [];
-if(count($_GET) > 3){
-    $filters = [];
-    foreach($_GET as $key => $value){
-        if($key != "status" && $key != "soldTo" && $key != "id"){
-            $filters[] = [$key, $value];
-        } 
-    }
-
-    foreach($resultArr as $item){
-        $canReturn = false;
-        foreach($filters as $filter){
-            if(!isset($item[$filter[0]]) || $item[$filter[0]] == $filter[1]){
-                $canReturn = true;
-            } else if (isset($item[$filter[0]]) || $item[$filter[0]] != $filter[1]){
-                $canReturn = false;
+    
+    if ($_POST["params"] != null) {
+        for($i = 0; $i < count($items); $i++){
+            $canReturn = false;
+            foreach($_POST["params"] as $key => $value){
+                $canReturn = checksWithParams($items[$i]["params"][$key], $value);
+            }
+            
+            if(!$canReturn){
+                unset($items[$i]);
             }
         }
-        
-        if($canReturn){
-            $filteredItems[] = $item;
-        }
     }
-} else {
-    $filteredItems = $resultArr;
+    mysqli_close($link);
 }
+echo json_encode($items);
 
-mysqli_close($link);
-
-echo json_encode($filteredItems);
-
-function resultCheck($res){
-    return (($res == "") ? "-1" : $res);
+function checksWithParams($itemParam, $value){
+    if(!isset($itemParam) || $itemParam == $value){
+        return true;
+    } else if (isset($itemParam) || $itemParam != $value){
+        return false;
+    }
 }
 ?>
