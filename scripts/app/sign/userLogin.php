@@ -6,7 +6,7 @@ $sql = 'SELECT * FROM user WHERE email="' . $_GET["email"] . '";';
 if ($result = mysqli_query($link, $sql)) {
     while ($row = mysqli_fetch_row($result)) {
         if(password_verify($_GET["password"], $row[3])){
-            $return = ["id" => checkVal($row[0]),
+            /* $return = ["id" => checkVal($row[0]),
             "username" => checkVal($row[1]),
             "email" => checkVal($row[2]),
             "password" => checkVal($row[3]),
@@ -19,7 +19,7 @@ if ($result = mysqli_query($link, $sql)) {
             "postal" => checkVal($row[10]),
             "status" => checkVal($row[11]),
             "phone" => checkVal($row[12])];
-            echo json_encode($return, JSON_PRETTY_PRINT, JSON_FORCE_OBJECT);
+            echo json_encode($return, JSON_PRETTY_PRINT, JSON_FORCE_OBJECT); */
         }
         else{echo "error";}
     }

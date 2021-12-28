@@ -2,7 +2,7 @@
 include_once "../config.php";
 
 $resultArr = [];
-$sql = 'SELECT id, name, date_added FROM articles WHERE status_id=1;';
+$sql = 'SELECT id, name, date_added FROM articles WHERE status_id=1 ORDER BY date_added;';
 if ($result = mysqli_query($link, $sql)) {
     while ($row = mysqli_fetch_row($result)) {
         $resultArr[] = [

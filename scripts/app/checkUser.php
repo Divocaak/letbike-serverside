@@ -2,7 +2,6 @@
 include_once "../config.php";
 
 $_POST = json_decode(file_get_contents("php://input"), true);
-//echo "post id: " . $_POST["userId"] . "<br>";
 $sql = "SELECT status_id FROM users WHERE id='" . $_POST["userId"] . "';";
 if ($result = mysqli_query($link, $sql)) {
     if (mysqli_num_rows($result) > 0) {

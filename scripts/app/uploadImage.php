@@ -5,10 +5,6 @@ if (!file_exists($pathToImages)) {
 }
 
 for($i = 0; $i < intval($_POST['imgCount']); $i++){
-  /* $baseDecoded = base64_decode($_POST["img" . strval($i)]);
-  
-  $fp = fopen($pathToImages . "/" . $i . ".jpg", "w+");
-  fwrite($fp, $baseDecoded); */
   imagejpeg(imagecreatefromstring(base64_decode($_POST["img" . strval($i)])), $pathToImages . "/" . $i . ".jpg", 20);
 }
 ?>

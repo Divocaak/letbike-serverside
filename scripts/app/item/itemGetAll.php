@@ -6,7 +6,7 @@ $items = [];
 $sql = "SELECT id, seller_id, sold_to, name, description, price, date_added, date_sold, imgs, status_id 
     FROM items WHERE status_id=" . $_POST["status"] .
     ($_POST["sellerId"] != null ? (" AND seller_id='" . $_POST["sellerId"] . "'") : "") .
-    ($_POST["soldTo"] != null ? (" AND sold_to='" . $_POST["soldTo"] . "'") : "") . ";";
+    ($_POST["soldTo"] != null ? (" AND sold_to='" . $_POST["soldTo"] . "'") : "") . " ORDER BY date_added;";
 if ($result = mysqli_query($link, $sql)) {
     while ($row = mysqli_fetch_row($result)) {
         $items[] = [
