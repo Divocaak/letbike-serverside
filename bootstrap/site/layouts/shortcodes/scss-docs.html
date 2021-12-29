@@ -21,7 +21,6 @@
   {{- $regex := printf `%s((?:.|\n)*)%s` $capture_start $capture_end -}}
 
   {{- /*
-    TODO: figure out why we can't do the following and get the first group (the only capturing one)...
     $regex := printf `(?:// scss-docs-start %s\n)((?:.|\n)*)(?:\n// scss-docs-end %s)` $name $name
   */ -}}
 

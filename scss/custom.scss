@@ -1,6 +1,9 @@
-$primary: #c29938;
-@import "../bootstrap/scss/_functions";
+$primary: #75c8ccFF;
+$secondary: #aedfdbFF;
+
+/* @import "../bootstrap/scss/_functions";
 @import "../bootstrap/scss/_variables";
 $custom-theme-colors: ( "customclr": #00ff2a);
-$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors); */
+
 @import "../bootstrap/scss/bootstrap";

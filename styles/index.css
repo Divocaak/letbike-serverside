@@ -31,20 +31,21 @@
 .over {
     position: relative;
     top: 100vh;
-    height: 500vh;
+    height: 100%;
     width: 100vw;
     z-index: 3;
-    background: linear-gradient(180deg, rgba(40, 40, 40, 1) 0%, rgba(117, 200, 204, 1) 100%);
-}
-
-h2 {
-    color: #75c8ccFF;
-}
-
-h3 {
-    color: #aedfdbFF;
+    background: linear-gradient(180deg, rgba(40, 40, 40, 1) 0%, rgba(80, 80, 80, 1) 100%);
 }
 
 #buy {
     display: none;
+}
+
+#download,
+#roadmap,
+#work,
+.work-0,
+.work-1,
+#credit {
+    opacity: 0;
 }
