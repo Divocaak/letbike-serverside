@@ -3,10 +3,10 @@ include_once "../../config.php";
 $_POST = json_decode(file_get_contents("php://input"), true);
 
 $items = [];
-$sql = "SELECT id, seller_id, sold_to, name, description, price, date_added, date_sold, imgs, status_id 
-    FROM items WHERE status_id=" . $_POST["status"] .
-    ($_POST["sellerId"] != null ? (" AND seller_id='" . $_POST["sellerId"] . "'") : "") .
-    ($_POST["soldTo"] != null ? (" AND sold_to='" . $_POST["soldTo"] . "'") : "") . " ORDER BY date_added;";
+$sql = "SELECT i.id, i.seller_id, i.sold_to, i.name, i.description, i.price, i.date_added, i.date_sold, i.imgs, i.status_id, u.name, u.mail 
+    FROM items i INNER JOIN users u ON i.seller_id=u.id WHERE i.status_id=" . $_POST["status"] .
+    ($_POST["sellerId"] != null ? (" AND i.seller_id='" . $_POST["sellerId"] . "'") : "") .
+    ($_POST["soldTo"] != null ? (" AND i.sold_to='" . $_POST["soldTo"] . "'") : "") . " ORDER BY i.date_added;";
 if ($result = mysqli_query($link, $sql)) {
     while ($row = mysqli_fetch_row($result)) {
         $items[] = [
@@ -20,6 +20,8 @@ if ($result = mysqli_query($link, $sql)) {
             "dateEnd" => $row[7],
             "imgs" => $row[8],
             "status" => $row[9],
+            "sellerName" => $row[10],
+            "sellerMail" => $row[11]
         ];
     }
     mysqli_free_result($result);
