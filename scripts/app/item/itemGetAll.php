@@ -2,11 +2,14 @@
 include_once "../../config.php";
 $_POST = json_decode(file_get_contents("php://input"), true);
 
+/* $_POST["status"] = 1;
+$_POST["params"]["usedSwitch"] = "true"; */
+
 $items = [];
 $sql = "SELECT i.id, i.seller_id, i.sold_to, i.name, i.description, i.price, i.date_added, i.date_sold, i.imgs, i.status_id, u.name, u.mail 
     FROM items i INNER JOIN users u ON i.seller_id=u.id WHERE i.status_id=" . $_POST["status"] .
     ($_POST["sellerId"] != null ? (" AND i.seller_id='" . $_POST["sellerId"] . "'") : "") .
-    ($_POST["soldTo"] != null ? (" AND i.sold_to='" . $_POST["soldTo"] . "'") : "") . " ORDER BY i.date_added;";
+    ($_POST["soldTo"] != null ? (" AND i.sold_to='" . $_POST["soldTo"] . "'") : "") . " ORDER BY i.date_added DESC;";
 if ($result = mysqli_query($link, $sql)) {
     while ($row = mysqli_fetch_row($result)) {
         $items[] = [
@@ -37,20 +40,21 @@ if ($result = mysqli_query($link, $sql)) {
     }
     
     if ($_POST["params"] != null) {
+        $filtered = [];
         for($i = 0; $i < count($items); $i++){
             $canReturn = false;
             foreach($_POST["params"] as $key => $value){
                 $canReturn = checksWithParams($items[$i]["params"][$key], $value);
             }
             
-            if(!$canReturn){
-                unset($items[$i]);
+            if($canReturn){
+                $filtered[] = $items[$i];
             }
         }
     }
     mysqli_close($link);
 }
-echo json_encode($items);
+echo json_encode($_POST["params"] != null ? $filtered : $items);
 
 function checksWithParams($itemParam, $value){
     if(!isset($itemParam) || $itemParam == $value){
