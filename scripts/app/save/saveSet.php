@@ -2,23 +2,23 @@
 include_once "../../config.php";
 
 $_POST = json_decode(file_get_contents("php://input"), true);
-$sql = "INSERT INTO items (seller_id, name, description, price, imgs, status_id)
-VALUES ('" . $_POST["userId"] . "', '" . $_POST["name"] . "', '" . $_POST["desc"] . "', " . $_POST["price"] . ", '" . $_POST["imgs"] . "', 1);";
-if (!mysqli_query($link, $sql)) {
-  echo "ERROR";
-} else {
-  $sql = "";
-  foreach ($_POST["params"] as $key => $value) {
-    $sql .= '(' . mysqli_insert_id($link) . ', "' . $key . '", "' . $value . '")' . ($key === array_key_last($_POST["params"]) ? ";" : ", ");
-  };
-
-  if ($sql == "") {
-    echo "ERROR";
-  } else {
-    $sql = "INSERT INTO params (item_id, name, value) VALUES " . $sql;
+$sql = "SELECT value FROM saves WHERE item_id=" . $_POST["itemId"] . " AND user_id='" . $_POST["userId"] . "';";
+if ($result = mysqli_query($link, $sql)) {
+  if (mysqli_num_rows($result) > 0) {
+    $sql = "UPDATE saves SET value=" . $_POST["val"] . " WHERE item_id=" . $_POST["itemId"] . " AND user_id='" . $_POST["userId"] . "';";
     if (!mysqli_query($link, $sql)) {
       echo "ERROR";
+    } else {
+      echo "Inzerát uložen na později.";
+    }
+  } else {
+    $sql = "INSERT INTO saves (item_id, user_id, value) VALUES (" . $_POST["itemId"] . ",'" . $_POST["userId"] . "'," . $_POST["val"] . ")";
+    if (!mysqli_query($link, $sql)) {
+      echo "ERROR";
+    } else {
+      echo "Inzerát uložen na později.";
     }
   }
 }
 mysqli_close($link);
+?>
