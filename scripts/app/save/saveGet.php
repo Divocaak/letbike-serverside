@@ -2,11 +2,14 @@
 include_once "../../config.php";
 
 $_POST = json_decode(file_get_contents("php://input"), true);
+
 $sql = "SELECT value FROM saves WHERE item_id=" . $_POST["itemId"] . " AND user_id='" . $_POST["userId"] . "';";
-if (!mysqli_query($link, $sql)) {
-  echo "ERROR";
+if ($result = mysqli_query($link, $sql)) {
+  while ($row = mysqli_fetch_row($result)) {
+    echo $row[0];
+  }
 } else {
-  echo $row[0];
+  echo "ERROR";
 }
 mysqli_close($link);
 ?>
