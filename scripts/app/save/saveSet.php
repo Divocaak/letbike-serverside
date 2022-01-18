@@ -9,7 +9,7 @@ if ($result = mysqli_query($link, $sql)) {
     if (!mysqli_query($link, $sql)) {
       echo "ERROR";
     } else {
-      echo "Inzerát uložen na později.";
+      echo $_POST["val"] == 1 ? "Inzerát uložen na později." : "Inzerát odebrán z uložených.";
     }
   } else {
     $sql = "INSERT INTO saves (item_id, user_id, value) VALUES (" . $_POST["itemId"] . ",'" . $_POST["userId"] . "'," . $_POST["val"] . ")";

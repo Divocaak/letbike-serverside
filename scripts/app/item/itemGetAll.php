@@ -7,7 +7,8 @@ $_POST["params"]["usedSwitch"] = "true"; */
 
 $items = [];
 $sql = "SELECT i.id, i.seller_id, i.sold_to, i.name, i.description, i.price, i.date_added, i.date_sold, i.imgs, i.status_id, u.name, u.mail 
-    FROM items i INNER JOIN users u ON i.seller_id=u.id WHERE i.status_id=" . $_POST["status"] .
+    FROM " . ($_POST["saverId"] != null ? "saves s INNER JOIN items i ON s.item_id=i.id " : "items i ") . "INNER JOIN users u ON i.seller_id=u.id 
+    WHERE " . ($_POST["saverId"] != null ? "s.value=1 AND s.user_id='" . $_POST["saverId"] . "' AND " : "") . "i.status_id=" . $_POST["status"] .
     ($_POST["sellerId"] != null ? (" AND i.seller_id='" . $_POST["sellerId"] . "'") : "") .
     ($_POST["soldTo"] != null ? (" AND i.sold_to='" . $_POST["soldTo"] . "'") : "") . " ORDER BY i.date_added DESC;";
 if ($result = mysqli_query($link, $sql)) {
@@ -29,7 +30,7 @@ if ($result = mysqli_query($link, $sql)) {
     }
     mysqli_free_result($result);
 
-    for($i = 0; $i < count($items); $i++){
+    for ($i = 0; $i < count($items); $i++) {
         $sql = 'SELECT name, value FROM params WHERE item_id=' . $items[$i]["id"] . ';';
         if ($result = mysqli_query($link, $sql)) {
             while ($row = mysqli_fetch_row($result)) {
@@ -38,16 +39,16 @@ if ($result = mysqli_query($link, $sql)) {
             mysqli_free_result($result);
         }
     }
-    
+
     if ($_POST["params"] != null) {
         $filtered = [];
-        for($i = 0; $i < count($items); $i++){
+        for ($i = 0; $i < count($items); $i++) {
             $canReturn = false;
-            foreach($_POST["params"] as $key => $value){
+            foreach ($_POST["params"] as $key => $value) {
                 $canReturn = checksWithParams($items[$i]["params"][$key], $value);
             }
-            
-            if($canReturn){
+
+            if ($canReturn) {
                 $filtered[] = $items[$i];
             }
         }
@@ -56,10 +57,11 @@ if ($result = mysqli_query($link, $sql)) {
 }
 echo json_encode($_POST["params"] != null ? $filtered : $items);
 
-function checksWithParams($itemParam, $value){
-    if(!isset($itemParam) || $itemParam == $value){
+function checksWithParams($itemParam, $value)
+{
+    if (!isset($itemParam) || $itemParam == $value) {
         return true;
-    } else if (isset($itemParam) || $itemParam != $value){
+    } else if (isset($itemParam) || $itemParam != $value) {
         return false;
     }
 }
