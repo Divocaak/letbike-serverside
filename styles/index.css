@@ -49,3 +49,7 @@
 #credit {
     opacity: 0;
 }
+
+img {
+    box-shadow: -10px 0px 13px -7px rgba(117, 200, 204, .2), 10px 0px 13px -7px rgba(117, 200, 204, .2), 0px 0px 25px 10px rgba(117, 200, 204, .2);
+}
