@@ -7,11 +7,6 @@ ScrollTrigger.create(getAnimSettings("#work"));
 ScrollTrigger.create(getAnimSettings("#credit"));
 ScrollTrigger.create(getAnimSettings("#divocak"));
 ScrollTrigger.create(getAnimSettings("#kreslin"));
-ScrollTrigger.create(getAnimSettings(".work-0"));
-ScrollTrigger.create(getAnimSettings(".work-1"));
-ScrollTrigger.create(getAnimSettings(".work-2"));
-ScrollTrigger.create(getAnimSettings(".work-3"));
-ScrollTrigger.create(getAnimSettings(".work-4"));
 
 function getAnimSettings(selector) {
     return {
