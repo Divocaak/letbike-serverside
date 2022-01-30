@@ -5,6 +5,8 @@ ScrollTrigger.create(getAnimSettings("#roadmap"));
 ScrollTrigger.create(getAnimSettings("#login"));
 ScrollTrigger.create(getAnimSettings("#work"));
 ScrollTrigger.create(getAnimSettings("#credit"));
+ScrollTrigger.create(getAnimSettings("#divocak"));
+ScrollTrigger.create(getAnimSettings("#kreslin"));
 ScrollTrigger.create(getAnimSettings(".work-0"));
 ScrollTrigger.create(getAnimSettings(".work-1"));
 ScrollTrigger.create(getAnimSettings(".work-2"));

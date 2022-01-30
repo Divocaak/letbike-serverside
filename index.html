@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="styles/custom.min.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
-    <!-- BUG nevalí -->
     <link rel="shortcut icon" href="favicon/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
@@ -36,7 +35,7 @@
     <div id="mainImage" class="d-block w-100">
         <div class="filter"></div>
         <div class="d-inline-flex align-items-center content">
-            <img class="w-25 rounded-3" src="imgs/web/icon.png ">
+            <img class="w-25 rounded-3 glare" src="imgs/web/icon.png ">
             <h1 class="m-5 bg-test">LetBike</h1>
         </div>
     </div>
@@ -48,18 +47,9 @@
                 <p>Stáhnětě si LetBike na <a href="">Google Play</a> nebo <a href="">App Store</a></p>
             </div>
             <div class="col-sm-12 m-sm-2 col-xl m-xl-5">
-                <img class="img-fluid" src="imgs/web/download.jpg">
+                <img class="img-fluid glare" src="imgs/web/download.jpg">
             </div>
         </div>
-        <!-- <div class="row d-inline-flex align-items-center" id="login">
-            <div class="col-sm-12 m-sm-2 col-xl m-xl-5">
-                <h2 class="text-primary">Login</h2>
-                <p>Do aplikace se přihlásíte jednoduše a rychle přes Váš účet Google</p>
-            </div>
-            <div class="col-sm-12 m-sm-2 col-xl m-xl-5">
-                <img class="h-50 w-50 rounded-3" src="gif/0.gif">
-            </div>
-        </div> -->
         <div class="m-5">
             <div id="work">
                 <h2 class="text-primary">Jak to funguje?</h2>
@@ -73,123 +63,141 @@
             </div>
             <div id="sell">
                 <div class="row d-inline-flex align-items-center work-0">
-                    <div class="col m-5">
+                    <div class="col-md-6 col-sm-12 mt-5">
                         <h3 class="text-secondary">Přidávání inzerátu</h3>
                         <p>Přidání pokud možno celého jména předmětu, detailní popis a určení přibližné částky, za kterou chcete předmět prodat. Poté vyberte obrázky. Mějte na paměti, že první vybraný obrázek se bude zobrazovat na domovské stránce aplikace.</p>
                     </div>
-                    <div class="col m-5">
-                        <img class="h-50 w-50 rounded-3" src="gif/s0_add.gif">
+                    <div class="col-md-6 col-sm-12">
+                        <img class="h-50 w-50 rounded-3 glare" src="gif/s0_add.gif">
                     </div>
                 </div>
                 <div class="row d-inline-flex align-items-center work-1">
-                    <div class="col m-5">
-                        <img class="h-50 w-50 rounded-3" src="gif/s1_param.gif">
+                    <div class="col-md-6 col-sm-12 d-none d-lg-block">
+                        <img class="h-50 w-50 rounded-3 glare" src="gif/s1_param.gif">
                     </div>
-                    <div class="col m-5">
+                    <div class="col-md-6 col-sm-12 mt-5">
                         <h3 class="text-secondary">Nastavení parametrů</h3>
                         <p>Nejdůležitější krok. Pokuste se ve svém vlastním zíjmu nabízený předmět co nejvíce specifikovat. Přes nastavené parametry si mohou ostatní uživatelé filtrovat nabízené předměty, proto je nejlepší nastavit parametrů co nejvíce.</p>
                     </div>
+                    <div class="col-md-6 col-sm-12 d-sm-none">
+                        <img class="h-50 w-50 rounded-3 glare" src="gif/s1_param.gif">
+                    </div>
                 </div>
                 <div class="row d-inline-flex align-items-center work-2">
-                    <div class="col m-5">
+                    <div class="col-md-6 col-sm-12 mt-5">
                         <h3 class="text-secondary">Chat se zájemcem</h3>
                         <p>Prodej v aplikaci funguje formou chatu. Protože sami víme, že ne každý předmět jde nacenit na korunu přesně, nabízíme "obchod chatem." Částka při přidání inzerátu tedy nemusí být finální.</p>
                     </div>
-                    <div class="col m-5">
-                        <img class="h-50 w-50 rounded-3" src="gif/s2_res.gif">
+                    <div class="col-md-6 col-sm-12">
+                        <img class="h-50 w-50 rounded-3 glare" src="gif/s2_res.gif">
                     </div>
                 </div>
                 <div class="row d-inline-flex align-items-center work-3">
-                    <div class="col m-5">
-                        <img class="h-50 w-50 rounded-3" src="gif/s3_sell.gif">
+                    <div class="col-md-6 col-sm-12 d-none d-lg-block">
+                        <img class="h-50 w-50 rounded-3 glare" src="gif/s3_sell.gif">
                     </div>
-                    <div class="col m-5">
+                    <div class="col-md-6 col-sm-12 mt-5">
                         <h3 class="text-secondary">Samotný prodej</h3>
                         <p>Poté, co se se zájemcem na všem domluvíte předmět prodejte tlačítkem na horní liště. Po kliknutí se předmět přesta zobrazovat ostatním uživatelům a bude čekat na ohodnocení.</p>
                     </div>
+                    <div class="col-md-6 col-sm-12 d-sm-none">
+                        <img class="h-50 w-50 rounded-3 glare" src="gif/s3_sell.gif">
+                    </div>
                 </div>
                 <div class="row d-inline-flex align-items-center work-4">
-                    <div class="col m-5">
+                    <div class="col-md-6 col-sm-12 mt-5">
                         <h3 class="text-secondary">Sbírejte hodnocení</h3>
                         <p>Vaše hodnocení se zobrazuje ostatním uživatelům, pokud od Vás chtějí něco koupit.</p>
                     </div>
-                    <div class="col m-5">
-                        <img class="h-50 w-50 rounded-3" src="imgs/web/ratings.png">
+                    <div class="col-md-6 col-sm-12">
+                        <img class="h-50 w-50 rounded-3 glare" src="imgs/web/ratings.png">
                     </div>
                 </div>
             </div>
             <div id="buy">
                 <div class="row d-inline-flex align-items-center work-0">
-                    <div class="col m-5">
-                        <img class="h-50 w-50 rounded-3" src="gif/b0_filter.gif">
+                    <div class="col-md-6 col-sm-12 d-none d-lg-block">
+                        <img class="h-50 w-50 rounded-3 glare" src="gif/b0_filter.gif">
                     </div>
-                    <div class="col m-5">
+                    <div class="col-md-6 col-sm-12 mt-5">
                         <h3 class="text-secondary">Filtrování</h3>
-                        <p>Hledáte konkrétní předmět? POužijte filtry a nechte si zobrazit jen to, co opravdu chcete.</p>
+                        <p>Hledáte konkrétní předmět? Použijte filtry a nechte si zobrazit jen to, co opravdu chcete.</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 d-sm-none">
+                        <img class="h-50 w-50 rounded-3 glare" src="gif/b0_filter.gif">
                     </div>
                 </div>
                 <div class="row d-inline-flex align-items-center work-1">
-                    <div class="col m-5">
+                    <div class="col-md-6 col-sm-12 mt-5">
                         <h3 class="text-secondary">Chat s prodávajícím</h3>
                         <p>Cena u inzerátu je čistě orientační, s prodejcem chatujte, o ceně klidně smlouvejte. Domluvte si způsob platby a formu doručení.</p>
                     </div>
-                    <div class="col m-5">
-                        <img class="h-50 w-50 rounded-3" src="gif/b1_chat.gif">
+                    <div class="col-md-6 col-sm-12">
+                        <img class="h-50 w-50 rounded-3 glare" src="gif/b1_chat.gif">
                     </div>
                 </div>
                 <div class="row d-inline-flex align-items-center work-2">
-                    <div class="col m-5">
-                        <img class="h-50 w-50 rounded-3" src="gif/b2_rate.gif">
+                    <div class="col-md-6 col-sm-12 d-none d-lg-block">
+                        <img class="h-50 w-50 rounded-3 glare" src="gif/b2_rate.gif">
                     </div>
-                    <div class="col m-5">
+                    <div class="col-md-6 col-sm-12 mt-5">
                         <h3 class="text-secondary">Hodnocení</h3>
                         <p>Po převzetí koupeného předmětu prodejce ohodnoťte. Hodnotíte prodejce a obchod s ním, ne zakoupený předmět. Nebylo vše podle plánů? Zahrňte to do hodnocení, pomůžete tím i ostatním.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="m-5" id="roadmap">
-            <h2 class="text-primary">Roadmap</h2>
-            <p>LetBike je samozřejmě běh na dlouhou trať a vývoj zdaleka není u konce. Zajímá Vás, kam chceme aplikaci dostat?<br>
-                <a href="roadmap.html">Zobrazit více</a>
-            </p>
-        </div>
-        <div class="m-5" id="credit">
-            <h2 class="text-primary">Autoři projektu</h2>
-            <div class="row">
-                <div class="col">
-                    <div class="row d-inline-flex align-items-center">
-                        <div class="col m-3">
-                            <h3 class="text-secondary">Vojtěch Divoký</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam eget nisl. Phasellus faucibus molestie nisl. Pellentesque sapien. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias</p>
-                            <a class="btn btn-primary" href=""><i class="bi bi-instagram"></i></a>
-                            <a class="btn btn-primary" href=""><i class="bi bi-facebook"></i></a>
-                            <a class="btn btn-primary" href=""><i class="bi bi-twitter"></i></a>
-                            <a class="btn btn-primary" href=""><i class="bi bi-envelope"></i></a>
-                        </div>
-                        <div class="col m-3">
-                            <img class="img-fluid rounded-circle" src="imgs/web/download.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="row d-inline-flex align-items-center">
-                        <div class="col m-3">
-                            <img class="img-fluid rounded-circle" src="imgs/web/download.jpg">
-                        </div>
-                        <div class="col m-3">
-                            <h3 class="text-secondary">Vojtěch Divoký</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam eget nisl. Phasellus faucibus molestie nisl. Pellentesque sapien. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias</p>
-                            <a class="btn btn-primary" href=""><i class="bi bi-instagram"></i></a>
-                            <a class="btn btn-primary" href=""><i class="bi bi-facebook"></i></a>
-                            <a class="btn btn-primary" href=""><i class="bi bi-twitter"></i></a>
-                            <a class="btn btn-primary" href=""><i class="bi bi-envelope"></i></a>
-                        </div>
+                    <div class="col-md-6 col-sm-12 d-sm-none">
+                        <img class="h-50 w-50 rounded-3 glare" src="gif/b2_rate.gif">
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row d-inline-flex align-items-center m-5" id="roadmap">
+            <div class="col-sm-12 m-sm-2 col-xl m-xl-5">
+                <h2 class="text-primary">Roadmap</h2>
+                <p>LetBike je samozřejmě běh na dlouhou trať a vývoj zdaleka není u konce. Zajímá Vás, kam chceme aplikaci dostat?<br>
+                    <a href="roadmap.html">Zobrazit více</a>
+                </p>
+            </div>
+
+            <div class="col-sm-12 m-sm-2 col-xl m-xl-5">
+                <img class="img-fluid glare" src="imgs/web/download.jpg">
+            </div>
+        </div>
+        <div class="m-5">
+            <h2 class="text-primary" id="credit">Autoři projektu</h2>
+            <div class="row d-inline-flex align-items-center" id="divocak">
+                <div class="col-md-6 col-sm-12 px-5">
+                    <h3 class="text-secondary">Vojtěch Divoký</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam eget nisl. Phasellus faucibus molestie nisl. Pellentesque sapien. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias</p>
+                    <a class="btn btn-primary" target="_blank" href="https://www.instagram.com/divokyvojta/"><i class="bi bi-instagram"></i></a>
+                    <a class="btn btn-primary" target="_blank" href="https://www.facebook.com/divokyv/"><i class="bi bi-facebook"></i></a>
+                    <a class="btn btn-primary" target="_blank" href="https://twitter.com/DivokyVojtech"><i class="bi bi-twitter"></i></a>
+                    <a class="btn btn-primary" target="_blank" href="mailto:divokyvojta@gmail.com"><i class="bi bi-envelope"></i></a>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-3">
+                    <img class="img-fluid rounded-circle w-75 glare" src="imgs/web/divocak.jpg">
+                </div>
+            </div>
+            <div class="row d-inline-flex align-items-center pt-5 mt-5" id="kreslin">
+                <div class="col-md-6 col-sm-12 d-none d-lg-block">
+                    <img class="img-fluid rounded-circle w-75 glare" src="imgs/web/kres.jpg">
+                </div>
+                <div class="col-md-6 col-sm-12 px-5">
+                    <h3 class="text-secondary">Daniel Kreslin</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam eget nisl. Phasellus faucibus molestie nisl. Pellentesque sapien. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias</p>
+                    <a class="btn btn-primary" target="_blank" href="https://www.instagram.com/danaskreslinu/"><i class="bi bi-instagram"></i></a>
+                    <a class="btn btn-primary" target="_blank" href="https://www.facebook.com/kresliin"><i class="bi bi-facebook"></i></a>
+                    <a class="btn btn-primary" target="_blank" href=""><i class="bi bi-envelope"></i></a>
+                </div>
+                <div class="col-md-6 col-sm-12 d-sm-none mt-3">
+                    <img class="img-fluid rounded-circle w-75 glare" src="imgs/web/kres.jpg">
+                </div>
+            </div>
+        </div>
+        <img class="img-fluid w-100" src="imgs/web/2.jpeg">
+        <img class="img-fluid w-100" src="imgs/web/3.jpeg">
+        <img class="img-fluid w-100" src="imgs/web/1.jpg">
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js "></script>
