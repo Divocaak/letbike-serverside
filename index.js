@@ -11,9 +11,10 @@ ScrollTrigger.create(getAnimSettings("#kreslin"));
 function getAnimSettings(selector) {
     return {
         trigger: selector,
-        start: "top 70%",
-        end: "center 20%",
+        start: "top 75%",
+        end: "end top",
         scrub: true,
+        /* markers: true, */
         onEnter: () => gsap.to(selector, {
             opacity: 1
         }),
