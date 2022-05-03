@@ -7,18 +7,14 @@ ScrollTrigger.create(getAnimSettings("#work"));
 ScrollTrigger.create(getAnimSettings("#credit"));
 ScrollTrigger.create(getAnimSettings("#divocak"));
 ScrollTrigger.create(getAnimSettings("#kreslin"));
-ScrollTrigger.create(getAnimSettings(".work-0"));
-ScrollTrigger.create(getAnimSettings(".work-1"));
-ScrollTrigger.create(getAnimSettings(".work-2"));
-ScrollTrigger.create(getAnimSettings(".work-3"));
-ScrollTrigger.create(getAnimSettings(".work-4"));
 
 function getAnimSettings(selector) {
     return {
         trigger: selector,
-        start: "top 70%",
-        end: "center 20%",
+        start: "top 75%",
+        end: "end top",
         scrub: true,
+        /* markers: true, */
         onEnter: () => gsap.to(selector, {
             opacity: 1
         }),

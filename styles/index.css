@@ -1,56 +1,51 @@
-#mainImage {
-    background-image: url('../imgs/web/0.jpg');
-    background-size: cover;
-    background-position: center;
-    position: fixed;
-    top: 0;
-}
-
-.filter {
-    background: linear-gradient(0deg, rgba(40, 40, 40, 255), 30%, rgba(0, 212, 255, 0) 100%);
-    z-index: 1;
-    opacity: .4;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-}
-
-.content {
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
-    padding: 20vh;
-    height: 100vh;
-    width: 100vh;
-}
-
-.content h1 {
-    text-shadow: 0px 0px 6px #75c8ccFF;
-}
-
-.over {
-    position: relative;
-    top: 100vh;
-    height: 100%;
-    width: 100vw;
-    z-index: 3;
-    background: linear-gradient(180deg, rgba(40, 40, 40, 1) 0%, rgba(80, 80, 80, 1) 100%);
-}
-
-#buy {
-    display: none;
-}
-
-#download,
-#roadmap,
-#work,
-.work-0,
-.work-1,
-#credit {
-    opacity: 0;
-}
-
-.glare {
-    box-shadow: -10px 0px 13px -7px rgba(117, 200, 204, .2), 10px 0px 13px -7px rgba(117, 200, 204, .2), 0px 0px 25px 10px rgba(117, 200, 204, .2);
-}
+    #mainImage {
+        background-image: url('../imgs/web/0.jpeg');
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        top: 0;
+    }
+    
+    .filter {
+        background: linear-gradient(0deg, rgba(40, 40, 40, 255), 30%, rgba(0, 212, 255, 0) 100%);
+        z-index: 1;
+        opacity: .4;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+    }
+    
+    .content {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        padding: 20vh;
+        height: 100vh;
+        width: 100vh;
+    }
+    
+    .content h1 {
+        text-shadow: 0px 0px 6px #75c8ccFF;
+    }
+    
+    .over {
+        position: relative;
+        top: 100vh;
+        height: 100%;
+        width: 100vw;
+        z-index: 3;
+        background: linear-gradient(180deg, rgba(40, 40, 40, 1) 0%, rgba(80, 80, 80, 1) 100%);
+        overflow-x: hidden !important;
+    }
+    
+    #download,
+    #roadmap,
+    #work,
+    #credit {
+        opacity: 0;
+    }
+    
+    .glare {
+        box-shadow: -10px 0px 13px -7px rgba(117, 200, 204, .2), 10px 0px 13px -7px rgba(117, 200, 204, .2), 0px 0px 25px 10px rgba(117, 200, 204, .2);
+    }
