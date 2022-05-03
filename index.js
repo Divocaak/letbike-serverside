@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create(getAnimSettings("#download"));
+ScrollTrigger.create(getAnimSettings("#socials"));
 ScrollTrigger.create(getAnimSettings("#roadmap"));
 ScrollTrigger.create(getAnimSettings("#login"));
 ScrollTrigger.create(getAnimSettings("#work"));
