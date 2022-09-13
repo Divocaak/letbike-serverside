@@ -34,7 +34,10 @@ if ($result = mysqli_query($link, $sql)) {
         $sql = 'SELECT name, value FROM params WHERE item_id=' . $items[$i]["id"] . ';';
         if ($result = mysqli_query($link, $sql)) {
             while ($row = mysqli_fetch_row($result)) {
-                $items[$i]["params"][$row[0]] = $row[1];
+                $items[$i]["params"][] = [
+                    "key" => $row[0],
+                    "value" => $row[1]
+                ];
             }
             mysqli_free_result($result);
         }
