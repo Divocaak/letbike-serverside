@@ -1,0 +1,1221 @@
+{
+    "used": {
+        "label": "Použité"
+    },
+    "data": {
+        "label": "Kategorie",
+        "values": [
+            {
+                "label": "Kola",
+                "type": {
+                    "label": "Typ",
+                    "values": [
+                        "Horská kola",
+                        "Silniční kola",
+                        "Celoodpružené",
+                        "Enduro",
+                        "Elektrokola",
+                        "Dětská kola",
+                        "Krosová/Trekingová kola",
+                        "Gravel/Cyklokros",
+                        "Historická kola",
+                        "Retro kola",
+                        "Dámská kola",
+                        "Městská kola",
+                        "Sjezdová kola",
+                        "Bmx kola",
+                        "Dirtová kola",
+                        "Trenažéry",
+                        "Koloběžky",
+                        "Odrážedla",
+                        "Dráhová kola",
+                        "Singlespeed",
+                        "Fatbike",
+                        "Skládací kola",
+                        "Cargobike",
+                        "Jiné"
+                    ]
+                },
+                "brand": {
+                    "label": "Značka",
+                    "values": [
+                        "4Ever",
+                        "Acra",
+                        "Amulet",
+                        "Apache",
+                        "Author",
+                        "Bianchi",
+                        "Cannonadale",
+                        "CTM",
+                        "Cube",
+                        "Denver",
+                        "Dino",
+                        "Fox",
+                        "Galaxy",
+                        "Ghost",
+                        "Giant",
+                        "GT",
+                        "Kellys",
+                        "Koss",
+                        "KTM",
+                        "Lapierre",
+                        "Leader",
+                        "Liberty",
+                        "Maxbike",
+                        "Merida",
+                        "MMR",
+                        "MRX",
+                        "Norco",
+                        "Olpran",
+                        "Orbea",
+                        "Rock Machine",
+                        "Scott",
+                        "Scud",
+                        "Specialized",
+                        "Stevens",
+                        "Superior",
+                        "Trek",
+                        "Jiné"
+                    ]
+                }
+            },
+            {
+                "label": "Komponenty",
+                "type": {
+                    "label": "Typ",
+                    "values": [
+                        {
+                            "label": "Zapletená kola",
+                            "brand": {
+                                "label": "Značka",
+                                "values": [
+                                    "Author",
+                                    "Bontrager",
+                                    "Campagnolo",
+                                    "Dema",
+                                    "DT Swiss",
+                                    "Easton",
+                                    "FFWD",
+                                    "Force",
+                                    "FSA",
+                                    "Fulcrum",
+                                    "Giant",
+                                    "Kellys",
+                                    "Lightweight",
+                                    "Mach",
+                                    "Mavic",
+                                    "Miche",
+                                    "Novatech",
+                                    "Remerx",
+                                    "Rodi",
+                                    "Shimano",
+                                    "Specialized",
+                                    "Sram",
+                                    "Veltec",
+                                    "Vision Tech",
+                                    "XLC",
+                                    "Zipp"
+                                ]
+                            },
+                            "size": {
+                                "label": "Velikost",
+                                "values": [
+                                    "12″",
+                                    "14″",
+                                    "16″",
+                                    "20″",
+                                    "23″",
+                                    "24″",
+                                    "25″",
+                                    "26″",
+                                    "27,5″",
+                                    "28″",
+                                    "29″"
+                                ]
+                            },
+                            "material": {
+                                "label": "Materiál",
+                                "values": [
+                                    "Karbon",
+                                    "Hlíník",
+                                    "Ocel"
+                                ]
+                            },
+                            "axis": {
+                                "label": "Osa",
+                                "values": [
+                                    "Pevná 20 mm",
+                                    "Pevná 15 mm",
+                                    "Pevná 12mm",
+                                    "Rychloupínák",
+                                    "Na matice"
+                                ]
+                            },
+                            "nut": {
+                                "label": "Značka ořechu",
+                                "values": [
+                                    "Shimano",
+                                    "Sram",
+                                    "Campagnolo"
+                                ]
+                            },
+                            "compatibility": {
+                                "label": "Kompatibilita",
+                                "values": [
+                                    "12 rychlostí",
+                                    "11 rychlostí",
+                                    "10 rychlostí",
+                                    "9 rychlostí",
+                                    "8 rychlostí",
+                                    "7 rychlostí",
+                                    "6 rychlostí",
+                                    "1 rychlost"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Kliky",
+                            "brand": {
+                                "label": "Značka",
+                                "values": [
+                                    "Aerozine",
+                                    "Campagnolo",
+                                    "Force",
+                                    "FSA",
+                                    "Prowhell",
+                                    "Race Face",
+                                    "Rotor",
+                                    "Shimano",
+                                    "SR Suntour",
+                                    "Sram",
+                                    "Sturney Archer",
+                                    "Sunrace",
+                                    "Truvativ",
+                                    "Jiné"
+                                ]
+                            },
+                            "compatibility": {
+                                "label": "Kompatibilita",
+                                "values": [
+                                    "1 Převodník",
+                                    "2 Převodníky",
+                                    "3 Převodníky"
+                                ]
+                            },
+                            "material": {
+                                "label": "Materiál",
+                                "values": [
+                                    "Karbon",
+                                    "Ocel",
+                                    "Hliník"
+                                ]
+                            },
+                            "axis": {
+                                "label": "Osa",
+                                "values": [
+                                    "DUB",
+                                    "29 mm",
+                                    "24 mm",
+                                    "BB30",
+                                    "4hran",
+                                    "Isis"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Převodníky",
+                            "brand": {
+                                "label": "Značka",
+                                "values": [
+                                    "absoluteBLACK",
+                                    "Aerozine",
+                                    "BBB",
+                                    "Campagnolo",
+                                    "Da Bomb",
+                                    "E*13",
+                                    "Fireeye",
+                                    "Force",
+                                    "FSA",
+                                    "Gebhardt",
+                                    "Manobike",
+                                    "MAX1",
+                                    "Prowheel",
+                                    "Renthal",
+                                    "Ridea",
+                                    "Rotor",
+                                    "Shaman Racing",
+                                    "Shimano",
+                                    "SR Suntour",
+                                    "Sram",
+                                    "Stronglight",
+                                    "Total BMX",
+                                    "Truvativ",
+                                    "Jiné"
+                                ]
+                            },
+                            "numOfSpeeds": {
+                                "label": "Počet rychlostí",
+                                "values": [
+                                    "1",
+                                    "2",
+                                    "7",
+                                    "8",
+                                    "9",
+                                    "10",
+                                    "11",
+                                    "12"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Sedla",
+                            "brand": {
+                                "label": "Značka",
+                                "values": [
+                                    "Author",
+                                    "BBB",
+                                    "Bontrager",
+                                    "Brooks",
+                                    "DDK",
+                                    "Ergon",
+                                    "Fabric",
+                                    "Felt",
+                                    "Fizik",
+                                    "Force",
+                                    "Giant",
+                                    "Kellys",
+                                    "Pro",
+                                    "Prologo",
+                                    "San Marco",
+                                    "Selle Bassano",
+                                    "Selle Italia",
+                                    "Selle Monte Grappa",
+                                    "Selle Royal",
+                                    "Selle San Marco",
+                                    "Selle SMP",
+                                    "Specialized",
+                                    "Sportourer",
+                                    "Velo",
+                                    "Wittkop",
+                                    "WTB",
+                                    "XLC",
+                                    "Jiné"
+                                ]
+                            },
+                            "gender": {
+                                "label": "Tvarování",
+                                "values": [
+                                    "Unisex",
+                                    "Pánské",
+                                    "Dámské",
+                                    "Dětské"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Vidlice",
+                            "brand": {
+                                "label": "Značka",
+                                "values": [
+                                    "Cane Creek",
+                                    "Cannondale",
+                                    "Cyklo Žitný",
+                                    "DVO suspension",
+                                    "Éclat",
+                                    "Felt",
+                                    "Force",
+                                    "Fox",
+                                    "GT",
+                                    "Macneil",
+                                    "Magura",
+                                    "Manitou",
+                                    "Marzocchi",
+                                    "Maxbike",
+                                    "MRX",
+                                    "M-Wave",
+                                    "Noxon",
+                                    "NS Bikes",
+                                    "Odyssey",
+                                    "Öhlins",
+                                    "Pells",
+                                    "Rock Shox",
+                                    "RST",
+                                    "Spinner",
+                                    "SR Suntour",
+                                    "Total BMX",
+                                    "TWN",
+                                    "WTP",
+                                    "Zoom",
+                                    "Jiné"
+                                ]
+                            },
+                            "size": {
+                                "label": "Velikost",
+                                "values": [
+                                    "12″",
+                                    "14″",
+                                    "16″",
+                                    "20″",
+                                    "23″",
+                                    "24″",
+                                    "25″",
+                                    "26″",
+                                    "27,5″",
+                                    "28″",
+                                    "29″"
+                                ]
+                            },
+                            "wheelCompatibility": {
+                                "label": "Kompatibilita",
+                                "values": [
+                                    "Rychloupínák",
+                                    "Pevná osa",
+                                    "Matice"
+                                ]
+                            },
+                            "material": {
+                                "label": "Materiál",
+                                "values": [
+                                    "Ocel",
+                                    "Karbon",
+                                    "Hliník",
+                                    "Titan"
+                                ]
+                            },
+                            "materialColumn": {
+                                "label": "Materiál sloupku",
+                                "values": [
+                                    "Karbon",
+                                    "Ocel",
+                                    "Hliník"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Bowdeny a lanka",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "Lanka brzdící",
+                                    "Lanka řadící",
+                                    "Bowdeny",
+                                    "Koncovky lanka",
+                                    "Konvovky bowdenu",
+                                    "Kompletní sady",
+                                    "Příslušenství"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Brzdy",
+                            "brand": {
+                                "label": "Značka",
+                                "values": [
+                                    "Avi",
+                                    "Berti",
+                                    "Btwi",
+                                    "Haye",
+                                    "Proma",
+                                    "Savoy",
+                                    "Shiman",
+                                    "Sra",
+                                    "Tektr",
+                                    "Van Ryse",
+                                    "Workshop"
+                                ]
+                            },
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "kotoučová",
+                                    "špalková",
+                                    "bubnová"
+                                ]
+                            },
+                            "discSize": {
+                                "label": "Velikost disku",
+                                "values": [
+                                    "140mm",
+                                    "160mm",
+                                    "180mm",
+                                    "203mm",
+                                    "jiné"
+                                ]
+                            },
+                            "blockType": {
+                                "label": "Typ",
+                                "values": [
+                                    "V-Brake",
+                                    "silniční",
+                                    "BMX",
+                                    "Cantilever"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Duše",
+                            "size": {
+                                "label": "Velikost",
+                                "values": [
+                                    "10″",
+                                    "12″",
+                                    "14″",
+                                    "16″",
+                                    "18″",
+                                    "20″",
+                                    "24″",
+                                    "26″",
+                                    "27.5″",
+                                    "28″",
+                                    "29″",
+                                    "jiné"
+                                ]
+                            },
+                            "type": {
+                                "label": "Ventilek",
+                                "values": [
+                                    "AV (auto/moto ventilek)",
+                                    "FV (galuskový ventilek)",
+                                    "DV (velo ventilek)"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Gripy a omotávky",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "Gripy Lock-On",
+                                    "Gripy klasické",
+                                    "Gripy ergonomické",
+                                    "Gripy dětské",
+                                    "Gripy s rohy",
+                                    "ostatní",
+                                    "Omotávky",
+                                    "Záslepky do řídítek",
+                                    "Příslušenství"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Hlavová složení",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "Ahead",
+                                    "závitové",
+                                    "integrované",
+                                    "Kroužky pod hlavové složení",
+                                    "Příslušenství"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Kazety a pastorky",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "12 rychlostní",
+                                    "11 rychlostní",
+                                    "10 rychlostní",
+                                    "9 rychlostní",
+                                    "8 rychlostní",
+                                    "7 rychlostní",
+                                    "6 rychlostní",
+                                    "5 rychlostní",
+                                    "Volnokolečka",
+                                    "Kryty",
+                                    "Příslušenství"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Náboje a osy",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "Přední náboje",
+                                    "Zadní náboje",
+                                    "Volnoběžné náboje",
+                                    "Vícerychlostní náboje",
+                                    "Rychloupínáky a Osy",
+                                    "Pastorky",
+                                    "Osy",
+                                    "Příslušenství"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Pedály",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "klasické",
+                                    "nášlapné ",
+                                    "dětské",
+                                    "Kufry pro nášlapné pedály",
+                                    "Příslušenství"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Pláště/Galusky",
+                            "size": {
+                                "label": "Velikost",
+                                "values": [
+                                    "10″",
+                                    "12″",
+                                    "14″",
+                                    "16″",
+                                    "18″",
+                                    "20″",
+                                    "24″",
+                                    "26″",
+                                    "27.5″",
+                                    "28″",
+                                    "29″",
+                                    "jiné"
+                                ]
+                            },
+                            "width": {
+                                "label": "Šířka",
+                                "values": [
+                                    "30C",
+                                    "32C",
+                                    "35C",
+                                    "38C",
+                                    "jiné"
+                                ]
+                            },
+                            "brand": {
+                                "label": "Značka",
+                                "values": [
+                                    "Maxxis",
+                                    "Kenda",
+                                    "Continental",
+                                    "Mitas",
+                                    "Force",
+                                    "Bontrager",
+                                    "CST",
+                                    "Donnelly",
+                                    "Elite",
+                                    "Giant",
+                                    "Challenge",
+                                    "Mavic",
+                                    "Michelin",
+                                    "Onza",
+                                    "Panaracer",
+                                    "Pirelli",
+                                    "Point",
+                                    "Ritchey",
+                                    "Rubena",
+                                    "Schwalbe",
+                                    "Tacx",
+                                    "Tufo",
+                                    "Vittoria",
+                                    "WTB",
+                                    "ZIPP",
+                                    "jiné"
+                                ]
+                            },
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "Silniční",
+                                    "MTB Horské",
+                                    "Crossová",
+                                    "Dětské",
+                                    "Galusky",
+                                    "Velopásky"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Představce",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "Ahead průměr řidítek 31,8mm",
+                                    "Ahead průměr řidítek 25,4mm",
+                                    "Ahead průměr řidítek 35mm",
+                                    "Ahead ostatní Ø",
+                                    "Ostatní"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Příslušenství na elektrokola",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "Baterie",
+                                    "Nabíječky",
+                                    "Displeje a ovladače"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Ráfky",
+                            "type": {
+                                "label": "Velikost",
+                                "values": [
+                                    "29″",
+                                    "28″",
+                                    "27,5″",
+                                    "26″",
+                                    "24″",
+                                    "20″",
+                                    "16″",
+                                    "12″",
+                                    "ostatní"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Rámy",
+                            "size": {
+                                "label": "Velikost",
+                                "values": [
+                                    "14 - 15",
+                                    "15 - 16",
+                                    "16 - 17",
+                                    "17 - 18",
+                                    "18 - 19",
+                                    "19 - 20",
+                                    "20 - 21",
+                                    "21 - 22",
+                                    "22 - 23",
+                                    "23 - 24",
+                                    "48 - 50",
+                                    "50 - 51",
+                                    "51 - 52",
+                                    "52 - 54",
+                                    "54 - 56",
+                                    "56 - 58",
+                                    "58 - 60",
+                                    "60 - 62",
+                                    "62 - 64",
+                                    "jiné"
+                                ]
+                            },
+                            "fork": {
+                                "label": "Vidlice",
+                                "values": [
+                                    "24",
+                                    "26",
+                                    "27.5",
+                                    "28",
+                                    "29",
+                                    "jiné"
+                                ]
+                            },
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "Horské MTB",
+                                    "Krosové",
+                                    "Cyklokrosové",
+                                    "Silniční",
+                                    "Freeride, Downhill",
+                                    "Dětské",
+                                    "BMX"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Řazení",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "Elektronické řazení eTap",
+                                    "Elektronické řazení Di2",
+                                    "páčkové",
+                                    "otočné",
+                                    "silniční",
+                                    "Set řazení a brzdy",
+                                    "Set řazení a brzdy silniční",
+                                    "Set řazení a brzdy Di2"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Řídítka",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "Berany",
+                                    "rovná",
+                                    "vlaštovky",
+                                    "Bullhorn",
+                                    "BMX",
+                                    "Aerodynamická",
+                                    "Cruiser",
+                                    "Butterfly",
+                                    "Moustache"
+                                ]
+                            },
+                            "material": {
+                                "label": "Materiál",
+                                "values": [
+                                    "karbon",
+                                    "hliníkové",
+                                    "ocel"
+                                ]
+                            },
+                            "width": {
+                                "label": "Šířka",
+                                "values": [
+                                    "36",
+                                    "38",
+                                    "40",
+                                    "42",
+                                    "44",
+                                    "46",
+                                    "jiné"
+                                ]
+                            },
+                            "size": {
+                                "label": "Průměr",
+                                "values": [
+                                    "25.4",
+                                    "31.8",
+                                    "jiné"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Sedlovky",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "Horské MTB",
+                                    "silníční",
+                                    "odpružené",
+                                    "teleskopické"
+                                ]
+                            },
+                            "length": {
+                                "label": "Délka",
+                                "values": [
+                                    "330mm",
+                                    "350mm",
+                                    "400mm",
+                                    "jiné"
+                                ]
+                            },
+                            "material": {
+                                "label": "Materiál",
+                                "values": [
+                                    "karbon",
+                                    "hliník",
+                                    "ocel"
+                                ]
+                            },
+                            "size": {
+                                "label": "Průměr",
+                                "values": [
+                                    "30.9",
+                                    "31.6",
+                                    "ostatní"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Tlumiče",
+                            "type": {
+                                "label": "Typ",
+                                "values": [
+                                    "vzduchové",
+                                    "pružinové",
+                                    "Pružiny",
+                                    "Vložky vymezovací",
+                                    "Náhradní díly"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Jiné"
+                        }
+                    ]
+                }
+            },
+            {
+                "label": "Doplňky",
+                "type": {
+                    "label": "Typ",
+                    "values": [
+                        {
+                            "label": "Blatníky",
+                            "type": {
+                                "label": "",
+                                "values": [
+                                    "Přední",
+                                    "Zadní",
+                                    "Sada"
+                                ]
+                            },
+                            "size": {
+                                "label": "",
+                                "values": [
+                                    "12″",
+                                    "14″",
+                                    "16″",
+                                    "20″",
+                                    "24″",
+                                    "26″",
+                                    "28″",
+                                    "29″"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Brašny/batohy"
+                        },
+                        {
+                            "label": "Brýle",
+                            "type": {
+                                "label": "",
+                                "values": [
+                                    "Závodní",
+                                    "Sportovní",
+                                    "Lifestyle"
+                                ]
+                            },
+                            "glass": {
+                                "label": "",
+                                "values": [
+                                    "fotochromatická",
+                                    "keramická",
+                                    "polarizační"
+                                ]
+                            },
+                            "gender": {
+                                "label": "",
+                                "values": [
+                                    "Pánské",
+                                    "Dámské",
+                                    "Dětské"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Cyklocomputery",
+                            "type": {
+                                "label": "",
+                                "values": [
+                                    "Bezdrátové",
+                                    "Drátové",
+                                    "Cyklonavigace"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Dětské sedačky",
+                            "type": {
+                                "label": "",
+                                "values": [
+                                    "Na řidítka",
+                                    "Na rám",
+                                    "Pod sedlo",
+                                    "Vodící tyče",
+                                    "Vozík za kolo"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Helmy",
+                            "type": {
+                                "label": "",
+                                "values": [
+                                    "Dospělí",
+                                    "Dětské"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Hustilky",
+                            "type": {
+                                "label": "",
+                                "values": [
+                                    "Dílenské",
+                                    "Cestovní",
+                                    "Na vidlice",
+                                    "Jednorázové bombičky",
+                                    "Náhradní díly"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Držáky na lahev",
+                            "type": {
+                                "label": "",
+                                "values": [
+                                    "Do rámu",
+                                    "Pod sedlo",
+                                    "Na řídítka"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Nářadí",
+                            "type": {
+                                "label": "",
+                                "values": [
+                                    "Na cesty",
+                                    "Ochrana rámu",
+                                    "středové klíče",
+                                    "pedálové klíče",
+                                    "stahováky",
+                                    "ostatní ",
+                                    "Maziva a čistidla",
+                                    "Měřidla",
+                                    "Nýtovače",
+                                    "Ostatní"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Nosič na kolo",
+                            "type": {
+                                "label": "",
+                                "values": [
+                                    "20″",
+                                    "24″",
+                                    "26″",
+                                    "28″",
+                                    "29″"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Nosiče"
+                        },
+                        {
+                            "label": "Oblečení",
+                            "clothesType": {
+                                "label": "",
+                                "values": [
+                                    "Cyklistické dresy",
+                                    "Elastické kraťasy krátké",
+                                    "Elastické kraťasy 3/4",
+                                    "Elastické kalhoty dlouhé",
+                                    "Volné kraťasy",
+                                    "Volné kraťasy 3/4",
+                                    "Volné kalhoty dlouhé",
+                                    "Cyklistické bundy a větrovky",
+                                    "Cyklistické vesty",
+                                    "chrániče kotníků",
+                                    "chrániče loktů",
+                                    "chrániče kolen",
+                                    "oblečení",
+                                    "Čepice",
+                                    "Ponožky",
+                                    "Návleky"
+                                ]
+                            },
+                            "gender": {
+                                "label": "",
+                                "values": [
+                                    "Pánské",
+                                    "Dámské",
+                                    "Dětské"
+                                ]
+                            },
+                            "size": {
+                                "label": "",
+                                "values": [
+                                    "XS",
+                                    "S",
+                                    "M",
+                                    "L",
+                                    "XL",
+                                    "XXL"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Obuv",
+                            "type": {
+                                "label": "",
+                                "values": [
+                                    "Horské",
+                                    "Silniční",
+                                    "Turistická"
+                                ]
+                            },
+                            "size": {
+                                "label": "",
+                                "values": [
+                                    "36",
+                                    "37",
+                                    "38",
+                                    "39",
+                                    "40",
+                                    "41",
+                                    "42",
+                                    "43",
+                                    "44",
+                                    "45",
+                                    "46",
+                                    "47",
+                                    "48",
+                                    "49",
+                                    "jiné"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Poukazy"
+                        },
+                        {
+                            "label": "Světla"
+                        },
+                        {
+                            "label": "Výživa"
+                        },
+                        {
+                            "label": "Zámky",
+                            "type": {
+                                "label": "",
+                                "values": [
+                                    "Lankové",
+                                    "Řetězové",
+                                    "Skládací",
+                                    "U-zámky",
+                                    "Kódové"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Nosiče na auto"
+                        }
+                    ]
+                }
+            },
+            {
+                "label": "Ostatní",
+                "type": {
+                    "label": "",
+                    "values": [
+                        {
+                            "label": "E-Bike",
+                            "brand": {
+                                "label": "",
+                                "values": [
+                                    "Crussis",
+                                    "Haibike",
+                                    "Apache",
+                                    "Rock Machine",
+                                    "Leader Fox",
+                                    "Jiné"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Tranažery",
+                            "brand": {
+                                "label": "",
+                                "values": [
+                                    "HMS",
+                                    "Tunturi",
+                                    "BH Fitness",
+                                    "InSPORTline",
+                                    "Spokey",
+                                    "Jiné"
+                                ]
+                            },
+                            "brakes": {
+                                "label": "",
+                                "values": [
+                                    "magnetický",
+                                    "indukční",
+                                    "páskový"
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Koloběžky",
+                            "size": {
+                                "label": "",
+                                "values": [
+                                    "přední 26″ a zadní 20″",
+                                    "přední 16″ a zadní 12″",
+                                    "přední 12″ a zadní 12″",
+                                    "přední 16″ a zadní 16″",
+                                    "přední 20″ a zadní 20″",
+                                    "přední 20″ a zadní 16″",
+                                    "přední 28″ a zadní 20″",
+                                    "přední 20″ a zadní 12″",
+                                    "přední 28″ a zadní 18″",
+                                    "přední 14″ a zadní 12″",
+                                    "přední 26″ a zadní 16″",
+                                    "přední 28″ a zadní 28″",
+                                    "přední 22″ a zadní 12″",
+                                    "přední 230 mm, zadní 180 mm"
+                                ]
+                            },
+                            "brand": {
+                                "label": "",
+                                "values": [
+                                    "AO",
+                                    "Bestial Wolf",
+                                    "Blazer",
+                                    "Blunt",
+                                    "Crisp",
+                                    "Crussis",
+                                    "District",
+                                    "Dominator",
+                                    "Enero",
+                                    "Ethic",
+                                    "Frenzy",
+                                    "Galaxy",
+                                    "Globber",
+                                    "Grit",
+                                    "Hudora",
+                                    "Chilli",
+                                    "InSPORTline",
+                                    "JD Bug",
+                                    "Kickbike",
+                                    "Kostka",
+                                    "Longway",
+                                    "Lucky",
+                                    "Madd Gear",
+                                    "Master",
+                                    "Meteor",
+                                    "Mibo",
+                                    "Micro",
+                                    "Milly Mally",
+                                    "Mondo",
+                                    "Morxes",
+                                    "Movino",
+                                    "Nils",
+                                    "North Scooters",
+                                    "Oxelo",
+                                    "Panda",
+                                    "Raven",
+                                    "Razor",
+                                    "Root Industries",
+                                    "R-Sport",
+                                    "Scoot & Ride",
+                                    "Sedco",
+                                    "Schildkrot",
+                                    "Slamm",
+                                    "Smoby",
+                                    "Spartan",
+                                    "Spokey",
+                                    "Stiga",
+                                    "Street Surfing",
+                                    "Striker",
+                                    "Tempish",
+                                    "Worker",
+                                    "Yedoo",
+                                    "Jiné"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
