@@ -1,8 +1,12 @@
 {
-    "used": {
-        "label": "Použité"
+    "used_switch": {
+        "label": "Použité",
+        "values": [
+            "Ne",
+            "Ano"
+        ]
     },
-    "data": {
+    "values": {
         "label": "Kategorie",
         "values": [
             {
@@ -86,6 +90,41 @@
                     "values": [
                         {
                             "label": "Zapletená kola",
+                            "spokes_switch": {
+                                "label": "Typ drátů",
+                                "values": [
+                                    "Kulaté",
+                                    "Ploché"
+                                ]
+                            },
+                            "type_switch": {
+                                "label": "Provedení náboje",
+                                "values": [
+                                    "Přední",
+                                    "Zadní"
+                                ]
+                            },
+                            "brakes_switch": {
+                                "label": "Typ brzd",
+                                "values": [
+                                    "Kotoučové",
+                                    "V-Brzdy"
+                                ]
+                            },
+                            "discBrakes_switch": {
+                                "label": "Uchycení disku",
+                                "values": [
+                                    "CenterLock",
+                                    "6 děr"
+                                ]
+                            },
+                            "cassette_switch": {
+                                "label": "Provedení kazety",
+                                "values": [
+                                    "Závit",
+                                    "Ořech"
+                                ]
+                            },
                             "brand": {
                                 "label": "Značka",
                                 "values": [
@@ -314,6 +353,20 @@
                         },
                         {
                             "label": "Vidlice",
+                            "type_switch": {
+                                "label": "Typ vidlice",
+                                "values": [
+                                    "Odpužená",
+                                    "Pevná"
+                                ]
+                            },
+                            "suspension_switch": {
+                                "label": "Odpružení",
+                                "values": [
+                                    "Vzduchové",
+                                    "Hydraulické"
+                                ]
+                            },
                             "brand": {
                                 "label": "Značka",
                                 "values": [
@@ -408,6 +461,13 @@
                         },
                         {
                             "label": "Brzdy",
+                            "disc_switch": {
+                                "label": "Typ",
+                                "values": [
+                                    "Hydraulická",
+                                    "Mechanická"
+                                ]
+                            },
                             "brand": {
                                 "label": "Značka",
                                 "values": [
@@ -560,6 +620,13 @@
                         },
                         {
                             "label": "Pláště/Galusky",
+                            "material_switch": {
+                                "label": "Materiál",
+                                "values": [
+                                    "Kevlar",
+                                    "Drát"
+                                ]
+                            },
                             "size": {
                                 "label": "Velikost",
                                 "values": [
@@ -847,7 +914,7 @@
                         {
                             "label": "Blatníky",
                             "type": {
-                                "label": "",
+                                "label": "Typ",
                                 "values": [
                                     "Přední",
                                     "Zadní",
@@ -855,7 +922,7 @@
                                 ]
                             },
                             "size": {
-                                "label": "",
+                                "label": "Velikost",
                                 "values": [
                                     "12″",
                                     "14″",
@@ -873,8 +940,22 @@
                         },
                         {
                             "label": "Brýle",
+                            "changeGlass_switch": {
+                                "label": "Vyměnitelná skla",
+                                "values": [
+                                    "Ano",
+                                    "Ne"
+                                ]
+                            },
+                            "changeHolder_switch": {
+                                "label": "Vyměnitelný nosník",
+                                "values": [
+                                    "Ano",
+                                    "Ne"
+                                ]
+                            },
                             "type": {
-                                "label": "",
+                                "label": "Typ",
                                 "values": [
                                     "Závodní",
                                     "Sportovní",
@@ -882,7 +963,7 @@
                                 ]
                             },
                             "glass": {
-                                "label": "",
+                                "label": "Skla",
                                 "values": [
                                     "fotochromatická",
                                     "keramická",
@@ -890,7 +971,7 @@
                                 ]
                             },
                             "gender": {
-                                "label": "",
+                                "label": "Styl",
                                 "values": [
                                     "Pánské",
                                     "Dámské",
@@ -901,7 +982,7 @@
                         {
                             "label": "Cyklocomputery",
                             "type": {
-                                "label": "",
+                                "label": "Typ",
                                 "values": [
                                     "Bezdrátové",
                                     "Drátové",
@@ -912,7 +993,7 @@
                         {
                             "label": "Dětské sedačky",
                             "type": {
-                                "label": "",
+                                "label": "Typ",
                                 "values": [
                                     "Na řidítka",
                                     "Na rám",
@@ -925,7 +1006,7 @@
                         {
                             "label": "Helmy",
                             "type": {
-                                "label": "",
+                                "label": "Velikost",
                                 "values": [
                                     "Dospělí",
                                     "Dětské"
@@ -935,7 +1016,7 @@
                         {
                             "label": "Hustilky",
                             "type": {
-                                "label": "",
+                                "label": "Typ",
                                 "values": [
                                     "Dílenské",
                                     "Cestovní",
@@ -948,7 +1029,7 @@
                         {
                             "label": "Držáky na lahev",
                             "type": {
-                                "label": "",
+                                "label": "Umístění",
                                 "values": [
                                     "Do rámu",
                                     "Pod sedlo",
@@ -959,7 +1040,7 @@
                         {
                             "label": "Nářadí",
                             "type": {
-                                "label": "",
+                                "label": "Typ",
                                 "values": [
                                     "Na cesty",
                                     "Ochrana rámu",
@@ -976,8 +1057,15 @@
                         },
                         {
                             "label": "Nosič na kolo",
+                            "placement_switch": {
+                                "label": "Umístění",
+                                "values": [
+                                    "Přední kolo",
+                                    "Zadní kolo"
+                                ]
+                            },
                             "type": {
-                                "label": "",
+                                "label": "Velikost",
                                 "values": [
                                     "20″",
                                     "24″",
@@ -993,7 +1081,7 @@
                         {
                             "label": "Oblečení",
                             "clothesType": {
-                                "label": "",
+                                "label": "Typ",
                                 "values": [
                                     "Cyklistické dresy",
                                     "Elastické kraťasy krátké",
@@ -1014,7 +1102,7 @@
                                 ]
                             },
                             "gender": {
-                                "label": "",
+                                "label": "Střih",
                                 "values": [
                                     "Pánské",
                                     "Dámské",
@@ -1022,7 +1110,7 @@
                                 ]
                             },
                             "size": {
-                                "label": "",
+                                "label": "Velikost",
                                 "values": [
                                     "XS",
                                     "S",
@@ -1036,7 +1124,7 @@
                         {
                             "label": "Obuv",
                             "type": {
-                                "label": "",
+                                "label": "Typ",
                                 "values": [
                                     "Horské",
                                     "Silniční",
@@ -1044,7 +1132,7 @@
                                 ]
                             },
                             "size": {
-                                "label": "",
+                                "label": "Velikost",
                                 "values": [
                                     "36",
                                     "37",
@@ -1068,7 +1156,14 @@
                             "label": "Poukazy"
                         },
                         {
-                            "label": "Světla"
+                            "label": "Světla",
+                            "type_switch": {
+                                "label": "Typ",
+                                "values": [
+                                    "Přední",
+                                    "Zadní"
+                                ]
+                            }
                         },
                         {
                             "label": "Výživa"
@@ -1076,7 +1171,7 @@
                         {
                             "label": "Zámky",
                             "type": {
-                                "label": "",
+                                "label": "Typ",
                                 "values": [
                                     "Lankové",
                                     "Řetězové",
@@ -1087,7 +1182,14 @@
                             }
                         },
                         {
-                            "label": "Nosiče na auto"
+                            "label": "Nosiče na auto",
+                            "placement_switch": {
+                                "label": "Umístění",
+                                "values": [
+                                    "Na tažné",
+                                    "Na střechu"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -1095,12 +1197,19 @@
             {
                 "label": "Ostatní",
                 "type": {
-                    "label": "",
+                    "label": "Typ",
                     "values": [
                         {
                             "label": "E-Bike",
+                            "motorPlacement_switch": {
+                                "label": "Umístění motoru",
+                                "values": [
+                                    "Středový",
+                                    "Nábojový"
+                                ]
+                            },
                             "brand": {
-                                "label": "",
+                                "label": "Značka",
                                 "values": [
                                     "Crussis",
                                     "Haibike",
@@ -1114,7 +1223,7 @@
                         {
                             "label": "Tranažery",
                             "brand": {
-                                "label": "",
+                                "label": "Značka",
                                 "values": [
                                     "HMS",
                                     "Tunturi",
@@ -1125,7 +1234,7 @@
                                 ]
                             },
                             "brakes": {
-                                "label": "",
+                                "label": "Typ brždění",
                                 "values": [
                                     "magnetický",
                                     "indukční",
@@ -1135,8 +1244,15 @@
                         },
                         {
                             "label": "Koloběžky",
+                            "computer_switch": {
+                                "label": "Počítač",
+                                "values": [
+                                    "Ano",
+                                    "Ne"
+                                ]
+                            },
                             "size": {
-                                "label": "",
+                                "label": "Velikost",
                                 "values": [
                                     "přední 26″ a zadní 20″",
                                     "přední 16″ a zadní 12″",
@@ -1155,7 +1271,7 @@
                                 ]
                             },
                             "brand": {
-                                "label": "",
+                                "label": "Značka",
                                 "values": [
                                     "AO",
                                     "Bestial Wolf",
