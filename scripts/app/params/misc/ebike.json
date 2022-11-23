@@ -1,0 +1,20 @@
+{
+    "motorPlacement_switch": {
+        "label": "Umístění motoru",
+        "values": {
+            "0": "Středový",
+            "1": "Nábojový"
+    }
+    },
+    "brand": {
+        "label": "Značka",
+        "values": {
+            "0": "Crussis",
+            "1": "Haibike",
+            "2": "Apache",
+            "3": "Rock Machine",
+            "4": "Leader Fox",
+            "5": "Jiné"
+    }
+    }
+}

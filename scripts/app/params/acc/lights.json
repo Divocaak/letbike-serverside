@@ -1,0 +1,9 @@
+{
+    "type_switch": {
+        "label": "Typ",
+        "values": [
+            "Přední",
+            "Zadní"
+        ]
+    }
+}

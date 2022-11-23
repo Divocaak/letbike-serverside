@@ -1,0 +1,42 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": "Cyklistické dresy",
+            "1": "Elastické kraťasy krátké",
+            "2": "Elastické kraťasy 3/4",
+            "3": "Elastické kalhoty dlouhé",
+            "4": "Volné kraťasy",
+            "5": "Volné kraťasy 3/4",
+            "6": "Volné kalhoty dlouhé",
+            "7": "Cyklistické bundy a větrovky",
+            "8": "Cyklistické vesty",
+            "9": "chrániče kotníků",
+            "10": "chrániče loktů",
+            "11": "chrániče kolen",
+            "12": "oblečení",
+            "13": "Čepice",
+            "14": "Ponožky",
+            "15": "Návleky"
+        }
+    },
+    "gender": {
+        "label": "Střih",
+        "values": {
+            "0": "Pánské",
+            "1": "Dámské",
+            "2": "Dětské"
+        }
+    },
+    "size": {
+        "label": "Velikost",
+        "values": {
+            "0": "XS",
+            "1": "S",
+            "2": "M",
+            "3": "L",
+            "4": "XL",
+            "5": "XXL"
+        }
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": {
+                "label": "Zapletená kola",
+                "key": "wheel"
+            },
+            "1": {
+                "label": "Kliky",
+                "key": "cranks"
+            },
+            "2": {
+                "label": "Převodníky",
+                "key": "converter"
+            },
+            "3": {
+                "label": "Sedla",
+                "key": "saddle"
+            },
+            "4": {
+                "label": "Vidlice",
+                "key": "fork"
+            },
+            "5": {
+                "label": "Bowdeny a lanka",
+                "key": "bowden"
+            },
+            "6": {
+                "label": "Brzdy",
+                "key": "brake"
+            },
+            "7": {
+                "label": "Duše",
+                "key": "tube"
+            },
+            "8": {
+                "label": "Gripy a omotávky",
+                "key": "grips"
+            },
+            "9": {
+                "label": "Hlavová složení",
+                "key": "headset"
+            },
+            "10": {
+                "label": "Kazety a pastorky",
+                "key": "cassette"
+            },
+            "11": {
+                "label": "Náboje a osy",
+                "key": "axis"
+            },
+            "12": {
+                "label": "Pedály",
+                "key": "pedals"
+            },
+            "13": {
+                "label": "Pláště/Galusky",
+                "key": "tire"
+            },
+            "14": {
+                "label": "Představce",
+                "key": "stem"
+            },
+            "15": {
+                "label": "Příslušenství na elektrokola",
+                "key": "ebike"
+            },
+            "16": {
+                "label": "Ráfky",
+                "key": "rims"
+            },
+            "17": {
+                "label": "Rámy",
+                "key": "frame"
+            },
+            "18": {
+                "label": "Řazení",
+                "key": "speed"
+            },
+            "19": {
+                "label": "Řídítka",
+                "key": "handlebars"
+            },
+            "20": {
+                "label": "Sedlovky",
+                "key": "seatpost"
+            },
+            "21": {
+                "label": "Tlumiče",
+                "key": "shock"
+            },
+            "22": {
+                "label": "Jiné",
+                "key": null
+            }
+        }
+    }
+}

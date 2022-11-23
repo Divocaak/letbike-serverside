@@ -1,0 +1,10 @@
+{
+    "type": {
+        "label": "Umístění",
+        "values": {
+            "0": "Do rámu",
+            "1": "Pod sedlo",
+            "2": "Na řídítka"
+        }
+    }
+}

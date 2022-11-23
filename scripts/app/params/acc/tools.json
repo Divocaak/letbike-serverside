@@ -1,0 +1,17 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": "Na cesty",
+            "1": "Ochrana rámu",
+            "2": "středové klíče",
+            "3": "pedálové klíče",
+            "4": "stahováky",
+            "5": "ostatní ",
+            "6": "Maziva a čistidla",
+            "7": "Měřidla",
+            "8": "Nýtovače",
+            "9": "Ostatní"
+    }
+    }
+}

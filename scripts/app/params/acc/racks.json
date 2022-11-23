@@ -1,0 +1,19 @@
+{
+    "placement_switch": {
+        "label": "Umístění",
+        "values": [
+            "Přední kolo",
+            "Zadní kolo"
+        ]
+    },
+    "type": {
+        "label": "Velikost",
+        "values": {
+            "0": "20″",
+            "1": "24″",
+            "2": "26″",
+            "3": "28″",
+            "4": "29″"
+        }
+    }
+}

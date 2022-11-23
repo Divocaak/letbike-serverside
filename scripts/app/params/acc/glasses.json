@@ -1,0 +1,40 @@
+{
+    "changeGlass_switch": {
+        "label": "Vyměnitelná skla",
+        "values": [
+            "Ano",
+            "Ne"
+        ]
+    },
+    "changeHolder_switch": {
+        "label": "Vyměnitelný nosník",
+        "values": [
+            "Ano",
+            "Ne"
+        ]
+    },
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": "Závodní",
+            "1": "Sportovní",
+            "2": "Lifestyle"
+        }
+    },
+    "glass": {
+        "label": "Skla",
+        "values": {
+            "0": "fotochromatická",
+            "1": "keramická",
+            "2": "polarizační"
+        }
+    },
+    "gender": {
+        "label": "Styl",
+        "values": {
+            "0": "Pánské",
+            "1": "Dámské",
+            "2": "Dětské"
+        }
+    }
+}

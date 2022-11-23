@@ -1,0 +1,68 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": {
+                "label": "Blatníky",
+                "key": "mudguards"
+            },
+            "1": {
+                "label": "Brašny/Batohy",
+                "note": "// URGENT key can be null, delete me later",
+                "key": null
+            },
+            "2": {
+                "label": "Brýle",
+                "key": "glasses"
+            },
+            "3": {
+                "label": "Cyklocomputery",
+                "key": "comps"
+            },
+            "4": {
+                "label": "Dětstké sedačky",
+                "key": "kidSaddles"
+            },
+            "5": {
+                "label": "Helmy",
+                "key": "helmets"
+            },
+            "6": {
+                "label": "Hustilky",
+                "key": "pumps"
+            },
+            "7": {
+                "label": "Držáky na lahev",
+                "key": "bottleHolders"
+            },
+            "8": {
+                "label": "Nářadí",
+                "key": "tools"
+            },
+            "9": {
+                "label": "Nosiče",
+                "key": "racks"
+            },
+            "10": {
+                "label": "Oblečení",
+                "key": "clothes"
+            },
+            "11": {
+                "label": "Obuv",
+                "key": "boots"
+            },
+            "12": {
+                "label": "Světla",
+                "key": "lights"
+            },
+            "13": {
+                "label": "Zámky",
+                "key": "locks"
+            },
+            "14": {
+                "label": "Nosiče na auto",
+                "key": "carRacks"
+            }
+        }
+    }
+}

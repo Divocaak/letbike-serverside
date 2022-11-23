@@ -1,0 +1,9 @@
+{
+    "placement_switch": {
+        "label": "Umístění",
+        "values": [
+            "Na tažné",
+            "Na střechu"
+        ]
+    }
+}

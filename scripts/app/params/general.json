@@ -1,0 +1,30 @@
+{
+    "used_switch": {
+        "label": "Použité",
+        "values": [
+            "Ne",
+            "Ano"
+        ]
+    },
+    "category": {
+        "label": "Kategorie",
+        "values": {
+            "0": {
+                "label": "Kola",
+                "key": "bikes"
+            },
+            "1": {
+                "label": "Komponenety",
+                "key": "comp"
+            },
+            "2": {
+                "label": "Doplňky",
+                "key": "acc"
+            },
+            "3": {
+                "label": "Ostatní",
+                "key": "misc"
+            }
+        }
+    }
+}

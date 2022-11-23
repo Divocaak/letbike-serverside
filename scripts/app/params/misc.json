@@ -1,0 +1,19 @@
+{
+    "type":{
+        "label": "Typ",
+        "values":{
+            "0":{
+                "label": "E-Bike",
+                "key": "ebike"
+            },
+            "1":{
+                "label":"Tranažery",
+                "key": "trainer"
+            },
+            "2":{
+                "label":"Koloběžky",
+                "key": "scooter"
+            }
+        }
+    }
+}

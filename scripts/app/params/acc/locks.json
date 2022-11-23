@@ -1,0 +1,12 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": "Lankové",
+            "1": "Řetězové",
+            "2": "Skládací",
+            "3": "U-zámky",
+            "4": "Kódové"
+        }
+    }
+}
