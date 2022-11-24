@@ -1,0 +1,44 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": "Berany",
+            "1": "rovná",
+            "2": "vlaštovky",
+            "3": "Bullhorn",
+            "4": "BMX",
+            "5": "Aerodynamická",
+            "6": "Cruiser",
+            "7": "Butterfly",
+            "8": "Moustache"
+        }
+    },
+    "material": {
+        "label": "Materiál",
+        "values": {
+            "0": "karbon",
+            "1": "hliníkové",
+            "2": "ocel"
+        }
+    },
+    "width": {
+        "label": "Šířka",
+        "values": {
+            "0": "36",
+            "1": "38",
+            "2": "40",
+            "3": "42",
+            "4": "44",
+            "5": "46",
+            "6": "jiné"
+        }
+    },
+    "size": {
+        "label": "Průměr",
+        "values": {
+            "0": "25.4",
+            "1": "31.8",
+            "2": "jiné"
+        }
+    }
+}

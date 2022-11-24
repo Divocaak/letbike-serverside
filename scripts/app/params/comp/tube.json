@@ -1,0 +1,27 @@
+{
+    "size": {
+        "label": "Velikost",
+        "values": {
+            "0": "10″",
+            "1": "12″",
+            "2": "14″",
+            "3": "16″",
+            "4": "18″",
+            "5": "20″",
+            "6": "24″",
+            "7": "26″",
+            "8": "27.5″",
+            "9": "28″",
+            "10": "29″",
+            "11": "jiné"
+        }
+    },
+    "type": {
+        "label": "Ventilek",
+        "values": {
+            "0": "AV (auto/moto ventilek)",
+            "1": "FV (galuskový ventilek)",
+            "2": "DV (velo ventilek)"
+        }
+    }
+}

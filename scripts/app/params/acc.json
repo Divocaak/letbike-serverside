@@ -7,9 +7,7 @@
                 "key": "mudguards"
             },
             "1": {
-                "label": "Brašny/Batohy",
-                "note": "// URGENT key can be null, delete me later",
-                "key": null
+                "label": "Brašny/Batohy"
             },
             "2": {
                 "label": "Brýle",

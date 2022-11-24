@@ -1,0 +1,15 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": "Elektronické řazení eTap",
+            "1": "Elektronické řazení Di2",
+            "2": "páčkové",
+            "3": "otočné",
+            "4": "silniční",
+            "5": "Set řazení a brzdy",
+            "6": "Set řazení a brzdy silniční",
+            "7": "Set řazení a brzdy Di2"
+    }
+    }
+}

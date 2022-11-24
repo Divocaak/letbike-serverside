@@ -1,0 +1,12 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": "klasické",
+            "1": "nášlapné ",
+            "2": "dětské",
+            "3": "Kufry pro nášlapné pedály",
+            "4": "Příslušenství"
+        }
+    }
+}

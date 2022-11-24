@@ -1,10 +1,10 @@
 {
     "motorPlacement_switch": {
         "label": "Umístění motoru",
-        "values": {
-            "0": "Středový",
-            "1": "Nábojový"
-    }
+        "values": [
+            "Středový",
+            "Nábojový"
+        ]
     },
     "brand": {
         "label": "Značka",

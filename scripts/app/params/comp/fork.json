@@ -1,0 +1,92 @@
+{
+    "type_switch": {
+        "label": "Typ vidlice",
+        "values": [
+            "Odpužená",
+            "Pevná"
+        ]
+    },
+    "suspension_switch": {
+        "label": "Odpružení",
+        "values": [
+            "Vzduchové",
+            "Hydraulické"
+        ]
+    },
+    "brand": {
+        "label": "Značka",
+        "values": {
+            "0": "Cane Creek",
+            "1": "Cannondale",
+            "2": "Cyklo Žitný",
+            "3": "DVO suspension",
+            "4": "Éclat",
+            "5": "Felt",
+            "6": "Force",
+            "7": "Fox",
+            "8": "GT",
+            "9": "Macneil",
+            "10": "Magura",
+            "11": "Manitou",
+            "12": "Marzocchi",
+            "13": "Maxbike",
+            "14": "MRX",
+            "15": "M-Wave",
+            "16": "Noxon",
+            "17": "NS Bikes",
+            "18": "Odyssey",
+            "19": "Öhlins",
+            "20": "Pells",
+            "21": "Rock Shox",
+            "22": "RST",
+            "23": "Spinner",
+            "24": "SR Suntour",
+            "25": "Total BMX",
+            "26": "TWN",
+            "27": "WTP",
+            "28": "Zoom",
+            "29": "Jiné"
+        }
+    },
+    "size": {
+        "label": "Velikost",
+        "values": {
+            "0": "12″",
+            "1": "14″",
+            "2": "16″",
+            "3": "20″",
+            "4": "23″",
+            "5": "24″",
+            "6": "25″",
+            "7": "26″",
+            "8": "27,5″",
+            "9": "28″",
+            "10": "29″"
+    }
+    },
+    "wheelCompatibility": {
+        "label": "Kompatibilita",
+        "values": {
+            "0": "Rychloupínák",
+            "1": "Pevná osa",
+            "2": "Matice"
+        }
+    },
+    "material": {
+        "label": "Materiál",
+        "values": {
+            "0": "Ocel",
+            "1": "Karbon",
+            "2": "Hliník",
+            "3":"Titan"
+        }
+    },
+    "materialColumn": {
+        "label": "Materiál sloupku",
+        "values": {
+            "0": "Karbon",
+            "1": "Ocel",
+            "2": "Hliník"
+        }
+    }
+}

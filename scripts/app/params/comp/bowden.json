@@ -1,0 +1,14 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": "Lanka brzdící",
+            "1": "Lanka řadící",
+            "2": "Bowdeny",
+            "3": "Koncovky lanka",
+            "4": "Konvovky bowdenu",
+            "5": "Kompletní sady",
+            "6": "Příslušenství"
+    }
+    }
+}

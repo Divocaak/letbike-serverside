@@ -1,0 +1,36 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": "Horské MTB",
+            "1": "silníční",
+            "2": "odpružené",
+            "3": "teleskopické"
+        }
+    },
+    "length": {
+        "label": "Délka",
+        "values": {
+            "0": "330mm",
+            "1": "350mm",
+            "2": "400mm",
+            "3": "jiné"
+        }
+    },
+    "material": {
+        "label": "Materiál",
+        "values": {
+            "0": "karbon",
+            "1": "hliník",
+            "2": "ocel"
+        }
+    },
+    "size": {
+        "label": "Průměr",
+        "values": {
+            "0": "30.9",
+            "1": "31.6",
+            "2": "ostatní"
+        }
+    }
+}

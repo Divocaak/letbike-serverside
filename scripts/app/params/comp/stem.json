@@ -1,0 +1,12 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": "Ahead průměr řidítek 31,8mm",
+            "1": "Ahead průměr řidítek 25,4mm",
+            "2": "Ahead průměr řidítek 35mm",
+            "3": "Ahead ostatní Ø",
+            "4": "Ostatní"
+    }
+    }
+}

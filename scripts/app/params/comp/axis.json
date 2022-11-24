@@ -1,0 +1,15 @@
+{
+    "type": {
+        "label": "Typ",
+        "values": {
+            "0": "Přední náboje",
+            "1": "Zadní náboje",
+            "2": "Volnoběžné náboje",
+            "3": "Vícerychlostní náboje",
+            "4": "Rychloupínáky a Osy",
+            "5": "Pastorky",
+            "6": "Osy",
+            "7": "Příslušenství"
+    }
+    }
+}
