@@ -4,62 +4,62 @@
         "values": {
             "0": {
                 "label": "Blatníky",
-                "key": "mudguards"
+                "file": "acc/mudguards"
             },
             "1": {
                 "label": "Brašny/Batohy"
             },
             "2": {
                 "label": "Brýle",
-                "key": "glasses"
+                "file": "acc/glasses"
             },
             "3": {
                 "label": "Cyklocomputery",
-                "key": "comps"
+                "file": "acc/comps"
             },
             "4": {
                 "label": "Dětstké sedačky",
-                "key": "kidSaddles"
+                "file": "acc/kidSaddles"
             },
             "5": {
                 "label": "Helmy",
-                "key": "helmets"
+                "file": "acc/helmets"
             },
             "6": {
                 "label": "Hustilky",
-                "key": "pumps"
+                "file": "acc/pumps"
             },
             "7": {
                 "label": "Držáky na lahev",
-                "key": "bottleHolders"
+                "file": "acc/bottleHolders"
             },
             "8": {
                 "label": "Nářadí",
-                "key": "tools"
+                "file": "acc/tools"
             },
             "9": {
                 "label": "Nosiče",
-                "key": "racks"
+                "file": "acc/racks"
             },
             "10": {
                 "label": "Oblečení",
-                "key": "clothes"
+                "file": "acc/clothes"
             },
             "11": {
                 "label": "Obuv",
-                "key": "boots"
+                "file": "acc/boots"
             },
             "12": {
                 "label": "Světla",
-                "key": "lights"
+                "file": "acc/lights"
             },
             "13": {
                 "label": "Zámky",
-                "key": "locks"
+                "file": "acc/locks"
             },
             "14": {
                 "label": "Nosiče na auto",
-                "key": "carRacks"
+                "file": "acc/carRacks"
             }
         }
     }

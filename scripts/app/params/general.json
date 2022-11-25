@@ -1,30 +1,33 @@
-{
-    "used_switch": {
+[
+    {
+        "key": "general-used",
+        "isSwitch": true,
         "label": "Použité",
         "values": [
             "Ne",
             "Ano"
         ]
     },
-    "category": {
+    {
+        "key": "general-category",
         "label": "Kategorie",
-        "values": {
-            "0": {
+        "values": [
+            {
                 "label": "Kola",
-                "key": "bikes"
+                "file": "bikes"
             },
-            "1": {
+            {
                 "label": "Komponenety",
-                "key": "comp"
+                "file": "comp"
             },
-            "2": {
+            {
                 "label": "Doplňky",
-                "key": "acc"
+                "file": "acc"
             },
-            "3": {
+            {
                 "label": "Ostatní",
-                "key": "misc"
+                "file": "misc"
             }
-        }
+        ]
     }
-}
+]

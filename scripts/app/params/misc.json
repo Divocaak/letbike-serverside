@@ -1,19 +1,20 @@
-{
-    "type":{
+[
+    {
+        "key": "misc-type",
         "label": "Typ",
-        "values":{
-            "0":{
+        "values": [
+            {
                 "label": "E-Bike",
-                "key": "ebike"
+                "file": "misc/ebike"
             },
-            "1":{
-                "label":"Tranažery",
-                "key": "trainer"
+            {
+                "label": "Tranažery",
+                "file": "misc/trainer"
             },
-            "2":{
-                "label":"Koloběžky",
-                "key": "scooter"
+            {
+                "label": "Koloběžky",
+                "file": "misc/scooter"
             }
-        }
+        ]
     }
-}
+]

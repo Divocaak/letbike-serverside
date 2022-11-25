@@ -1,21 +1,23 @@
-{
-    "brand": {
+[
+    {
+        "key": "misc-trainer-brand",
         "label": "Značka",
-        "values": {
-            "0": "HMS",
-            "1": "Tunturi",
-            "2": "BH Fitness",
-            "3": "InSPORTline",
-            "4": "Spokey",
-            "5": "Jiné"
-        }
+        "values": [
+            "HMS",
+            "Tunturi",
+            "BH Fitness",
+            "InSPORTline",
+            "Spokey",
+            "Jiné"
+        ]
     },
-    "brakes": {
+    {
+        "key": "misc-trainer-brakes",
         "label": "Typ brždění",
-        "values": {
-            "0": "magnetický",
-            "1": "indukční",
-            "2": "páskový"
-        }
+        "values": [
+            "magnetický",
+            "indukční",
+            "páskový"
+        ]
     }
-}
+]
