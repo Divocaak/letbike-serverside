@@ -1,78 +1,84 @@
-{
-    "material_switch": {
+[
+    {
+        "key": "comp-tire-material",
+        "isSwitch": true,
         "label": "Materiál",
         "values": [
             "Kevlar",
             "Drát"
         ]
     },
-    "size": {
+    {
+        "key": "comp-tire-size",
         "label": "Velikost",
-        "values": {
-            "0": "10″",
-            "1": "12″",
-            "2": "14″",
-            "3": "16″",
-            "4": "18″",
-            "5": "20″",
-            "6": "24″",
-            "7": "26″",
-            "8": "27.5″",
-            "9": "28″",
-            "10": "29″",
-            "11": "jiné"
-        }
+        "values": [
+            "10″",
+            "12″",
+            "14″",
+            "16″",
+            "18″",
+            "20″",
+            "24″",
+            "26″",
+            "27.5″",
+            "28″",
+            "29″",
+            "jiné"
+        ]
     },
-    "width": {
+    {
+        "key": "comp-tire-width",
         "label": "Šířka",
-        "values": {
-            "0": "30C",
-            "1": "32C",
-            "2": "35C",
-            "3": "38C",
-            "4": "jiné"
-        }
+        "values": [
+            "30C",
+            "32C",
+            "35C",
+            "38C",
+            "jiné"
+        ]
     },
-    "brand": {
+    {
+        "key": "comp-tire-brand",
         "label": "Značka",
-        "values": {
-            "0": "Maxxis",
-            "1": "Kenda",
-            "2": "Continental",
-            "3": "Mitas",
-            "4": "Force",
-            "5": "Bontrager",
-            "6": "CST",
-            "7": "Donnelly",
-            "8": "Elite",
-            "9": "Giant",
-            "10": "Challenge",
-            "11": "Mavic",
-            "12": "Michelin",
-            "13": "Onza",
-            "14": "Panaracer",
-            "15": "Pirelli",
-            "16": "Point",
-            "17": "Ritchey",
-            "18": "Rubena",
-            "19": "Schwalbe",
-            "20": "Tacx",
-            "21": "Tufo",
-            "22": "Vittoria",
-            "23": "WTB",
-            "24": "ZIPP",
-            "25": "jiné"
-        }
+        "values": [
+            "Maxxis",
+            "Kenda",
+            "Continental",
+            "Mitas",
+            "Force",
+            "Bontrager",
+            "CST",
+            "Donnelly",
+            "Elite",
+            "Giant",
+            "Challenge",
+            "Mavic",
+            "Michelin",
+            "Onza",
+            "Panaracer",
+            "Pirelli",
+            "Point",
+            "Ritchey",
+            "Rubena",
+            "Schwalbe",
+            "Tacx",
+            "Tufo",
+            "Vittoria",
+            "WTB",
+            "ZIPP",
+            "jiné"
+        ]
     },
-    "type": {
+    {
+        "key": "comp-tire-type",
         "label": "Typ",
-        "values": {
-            "0": "Silniční",
-            "1": "MTB Horské",
-            "2": "Crossová",
-            "3": "Dětské",
-            "4": "Galusky",
-            "5": "Velopásky"
-        }
+        "values": [
+            "Silniční",
+            "MTB Horské",
+            "Crossová",
+            "Dětské",
+            "Galusky",
+            "Velopásky"
+        ]
     }
-}
+]

@@ -1,10 +1,11 @@
-{
-    "type": {
+[
+    {
+        "key":"acc-comps-type",
         "label": "Typ",
-        "values": {
-            "0": "Bezdrátové",
-            "1": "Drátové",
-            "2": "Cyklonavigace"
-        }
+        "values": [
+            "Bezdrátové",
+            "Drátové",
+            "Cyklonavigace"
+        ]
     }   
-}
+]

@@ -1,10 +1,11 @@
-{
-    "type": {
+[
+    {
+        "key": "comp-ebike-type",
         "label": "Typ",
-        "values": {
-            "0": "Baterie",
-            "1": "Nabíječky",
-            "2": "Displeje a ovladače"
-        }
+        "values": [
+            "Baterie",
+            "Nabíječky",
+            "Displeje a ovladače"
+        ]
     }
-}
+]

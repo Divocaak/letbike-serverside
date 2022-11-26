@@ -1,36 +1,40 @@
-{
-    "type": {
+[
+    {
+        "key": "comp-seatpost-type",
         "label": "Typ",
-        "values": {
-            "0": "Horské MTB",
-            "1": "silníční",
-            "2": "odpružené",
-            "3": "teleskopické"
-        }
+        "values": [
+            "Horské MTB",
+            "silníční",
+            "odpružené",
+            "teleskopické"
+        ]
     },
-    "length": {
+    {
+        "key": "comp-seatpost-length",
         "label": "Délka",
-        "values": {
-            "0": "330mm",
-            "1": "350mm",
-            "2": "400mm",
-            "3": "jiné"
-        }
+        "values": [
+            "330mm",
+            "350mm",
+            "400mm",
+            "jiné"
+        ]
     },
-    "material": {
+    {
+        "key": "comp-seatpost-material",
         "label": "Materiál",
-        "values": {
-            "0": "karbon",
-            "1": "hliník",
-            "2": "ocel"
-        }
+        "values": [
+            "karbon",
+            "hliník",
+            "ocel"
+        ]
     },
-    "size": {
+    {
+        "key": "comp-seatpost-size",
         "label": "Průměr",
-        "values": {
-            "0": "30.9",
-            "1": "31.6",
-            "2": "ostatní"
-        }
+        "values": [
+            "30.9",
+            "31.6",
+            "ostatní"
+        ]
     }
-}
+]

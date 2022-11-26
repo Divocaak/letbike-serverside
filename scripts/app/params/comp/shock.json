@@ -1,12 +1,13 @@
-{
-    "type": {
+[
+    {
+        "key": "comp-shock-type",
         "label": "Typ",
-        "values": {
-            "0": "vzduchové",
-            "1": "pružinové",
-            "2": "Pružiny",
-            "3": "Vložky vymezovací",
-            "4": "Náhradní díly"
+        "values": [
+            "vzduchové",
+            "pružinové",
+            "Pružiny",
+            "Vložky vymezovací",
+            "Náhradní díly"
+        ]
     }
-    }   
-}
+]

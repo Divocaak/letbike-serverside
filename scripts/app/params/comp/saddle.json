@@ -1,44 +1,46 @@
-{
-    "brand": {
+[
+    {
+        "key": "comp-saddle-brand",
         "label": "Značka",
-        "values": {
-            "0": "Author",
-            "1": "BBB",
-            "2": "Bontrager",
-            "3": "Brooks",
-            "4": "DDK",
-            "5": "Ergon",
-            "6": "Fabric",
-            "7": "Felt",
-            "8": "Fizik",
-            "9": "Force",
-            "10": "Giant",
-            "11": "Kellys",
-            "12": "Pro",
-            "13": "Prologo",
-            "14": "San Marco",
-            "15": "Selle Bassano",
-            "16": "Selle Italia",
-            "17": "Selle Monte Grappa",
-            "18": "Selle Royal",
-            "19": "Selle San Marco",
-            "20": "Selle SMP",
-            "21": "Specialized",
-            "22": "Sportourer",
-            "23": "Velo",
-            "24": "Wittkop",
-            "25": "WTB",
-            "26": "XLC",
-            "27": "Jiné"
-       }
+        "values": [
+            "Author",
+            "BBB",
+            "Bontrager",
+            "Brooks",
+            "DDK",
+            "Ergon",
+            "Fabric",
+            "Felt",
+            "Fizik",
+            "Force",
+            "Giant",
+            "Kellys",
+            "Pro",
+            "Prologo",
+            "San Marco",
+            "Selle Bassano",
+            "Selle Italia",
+            "Selle Monte Grappa",
+            "Selle Royal",
+            "Selle San Marco",
+            "Selle SMP",
+            "Specialized",
+            "Sportourer",
+            "Velo",
+            "Wittkop",
+            "WTB",
+            "XLC",
+            "Jiné"
+        ]
     },
-    "gender": {
+    {
+        "key": "comp-saddle-gender",
         "label": "Tvarování",
-        "values": {
-            "0": "Unisex",
-            "1": "Pánské",
-            "2": "Dámské",
-            "3": "Dětské"
-        }
+        "values": [
+            "Unisex",
+            "Pánské",
+            "Dámské",
+            "Dětské"
+        ]
     }
-}
+]

@@ -1,19 +1,22 @@
-{
-    "placement_switch": {
+[
+    {
+        "key": "acc-racks-placement",
+        "isSwitch": true,
         "label": "Umístění",
         "values": [
             "Přední kolo",
             "Zadní kolo"
         ]
     },
-    "type": {
+    {
+        "key": "acc-racks-type",
         "label": "Velikost",
-        "values": {
-            "0": "20″",
-            "1": "24″",
-            "2": "26″",
-            "3": "28″",
-            "4": "29″"
-        }
+        "values": [
+            "20″",
+            "24″",
+            "26″",
+            "28″",
+            "29″"
+        ]
     }
-}
+]

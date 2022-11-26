@@ -1,44 +1,46 @@
-{
-    "brand": {
+[
+    {
+        "key": "comp-converter-brand",
         "label": "Značka",
-        "values": {
-            "0": "absoluteBLACK",
-            "1": "Aerozine",
-            "2": "BBB",
-            "3": "Campagnolo",
-            "4": "Da Bomb",
-            "5": "E*13",
-            "6": "Fireeye",
-            "7": "Force",
-            "8": "FSA",
-            "9": "Gebhardt",
-            "10": "Manobike",
-            "11": "MAX1",
-            "12": "Prowheel",
-            "13": "Renthal",
-            "14": "Ridea",
-            "15": "Rotor",
-            "16": "Shaman Racing",
-            "17": "Shimano",
-            "18": "SR Suntour",
-            "19": "Sram",
-            "20": "Stronglight",
-            "21": "Total BMX",
-            "22": "Truvativ",
-            "23": "Jiné"
-    }
+        "values": [
+            "absoluteBLACK",
+            "Aerozine",
+            "BBB",
+            "Campagnolo",
+            "Da Bomb",
+            "E*13",
+            "Fireeye",
+            "Force",
+            "FSA",
+            "Gebhardt",
+            "Manobike",
+            "MAX1",
+            "Prowheel",
+            "Renthal",
+            "Ridea",
+            "Rotor",
+            "Shaman Racing",
+            "Shimano",
+            "SR Suntour",
+            "Sram",
+            "Stronglight",
+            "Total BMX",
+            "Truvativ",
+            "Jiné"
+        ]
     },
-    "numOfSpeeds": {
+    {
+        "key": "comp-converter-numOfSpeeds",
         "label": "Počet rychlostí",
-        "values": {
-            "0": "1",
-            "1": "2",
-            "2": "7",
-            "3": "8",
-            "4": "9",
-            "5": "10",
-            "6": "11",
-            "7": "12"
-        }
-    }   
-}
+        "values": [
+            "1",
+            "2",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+        ]
+    }
+]

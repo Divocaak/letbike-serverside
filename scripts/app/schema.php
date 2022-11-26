@@ -29,5 +29,4 @@ function loopMoreOption(&$arr)
         $arr["options"] = loopAllOptions($arr["file"]);
     }
 }
-// TODO reformat acc/* and comp/* files
 ?>

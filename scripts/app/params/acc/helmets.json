@@ -1,9 +1,11 @@
-{
-    "size_switch": {
+[
+    {
+        "key": "acc-helmets-size",
+        "isSwitch": true,
         "label": "Velikost",
         "values": [
             "Dospělé",
             "Dětské"
         ]
     }
-}
+]

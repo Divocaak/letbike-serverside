@@ -1,92 +1,101 @@
-{
-    "type_switch": {
+[
+    {
+        "key": "comp-fork-type",
+        "isSwitch": true,
         "label": "Typ vidlice",
         "values": [
             "Odpužená",
             "Pevná"
         ]
     },
-    "suspension_switch": {
+    {
+        "key": "comp-fork-suspension",
+        "isSwitch": true,
         "label": "Odpružení",
         "values": [
             "Vzduchové",
             "Hydraulické"
         ]
     },
-    "brand": {
+    {
+        "key": "comp-fork-brand",
         "label": "Značka",
-        "values": {
-            "0": "Cane Creek",
-            "1": "Cannondale",
-            "2": "Cyklo Žitný",
-            "3": "DVO suspension",
-            "4": "Éclat",
-            "5": "Felt",
-            "6": "Force",
-            "7": "Fox",
-            "8": "GT",
-            "9": "Macneil",
-            "10": "Magura",
-            "11": "Manitou",
-            "12": "Marzocchi",
-            "13": "Maxbike",
-            "14": "MRX",
-            "15": "M-Wave",
-            "16": "Noxon",
-            "17": "NS Bikes",
-            "18": "Odyssey",
-            "19": "Öhlins",
-            "20": "Pells",
-            "21": "Rock Shox",
-            "22": "RST",
-            "23": "Spinner",
-            "24": "SR Suntour",
-            "25": "Total BMX",
-            "26": "TWN",
-            "27": "WTP",
-            "28": "Zoom",
-            "29": "Jiné"
-        }
+        "values": [
+            "Cane Creek",
+            "Cannondale",
+            "Cyklo Žitný",
+            "DVO suspension",
+            "Éclat",
+            "Felt",
+            "Force",
+            "Fox",
+            "GT",
+            "Macneil",
+            "Magura",
+            "Manitou",
+            "Marzocchi",
+            "Maxbike",
+            "MRX",
+            "M-Wave",
+            "Noxon",
+            "NS Bikes",
+            "Odyssey",
+            "Öhlins",
+            "Pells",
+            "Rock Shox",
+            "RST",
+            "Spinner",
+            "SR Suntour",
+            "Total BMX",
+            "TWN",
+            "WTP",
+            "Zoom",
+            "Jiné"
+        ]
     },
-    "size": {
+    {
+        "key": "comp-fork-size",
         "label": "Velikost",
-        "values": {
-            "0": "12″",
-            "1": "14″",
-            "2": "16″",
-            "3": "20″",
-            "4": "23″",
-            "5": "24″",
-            "6": "25″",
-            "7": "26″",
-            "8": "27,5″",
-            "9": "28″",
-            "10": "29″"
-    }
+        "values": [
+            "12″",
+            "14″",
+            "16″",
+            "20″",
+            "23″",
+            "24″",
+            "25″",
+            "26″",
+            "27,5″",
+            "28″",
+            "29″"
+        ]
     },
-    "wheelCompatibility": {
+    {
+        "key": "comp-fork-wheelCompatibility",
         "label": "Kompatibilita",
-        "values": {
-            "0": "Rychloupínák",
-            "1": "Pevná osa",
-            "2": "Matice"
-        }
+        "values": [
+            "Rychloupínák",
+            "Pevná osa",
+            "Matice"
+        ]
     },
-    "material": {
+    {
+        "key": "comp-fork-material",
         "label": "Materiál",
-        "values": {
-            "0": "Ocel",
-            "1": "Karbon",
-            "2": "Hliník",
-            "3":"Titan"
-        }
+        "values": [
+            "Ocel",
+            "Karbon",
+            "Hliník",
+            "Titan"
+        ]
     },
-    "materialColumn": {
+    {
+        "key": "comp-fork-materialColumn",
         "label": "Materiál sloupku",
-        "values": {
-            "0": "Karbon",
-            "1": "Ocel",
-            "2": "Hliník"
-        }
+        "values": [
+            "Karbon",
+            "Ocel",
+            "Hliník"
+        ]
     }
-}
+]

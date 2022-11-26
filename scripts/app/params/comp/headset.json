@@ -1,12 +1,13 @@
-{
-    "type": {
+[
+    {
+        "key": "comp-headset-type",
         "label": "Typ",
-        "values": {
-            "0": "Ahead",
-            "1": "závitové",
-            "2": "integrované",
-            "3": "Kroužky pod hlavové složení",
-            "4": "Příslušenství"
+        "values": [
+            "Ahead",
+            "závitové",
+            "integrované",
+            "Kroužky pod hlavové složení",
+            "Příslušenství"
+        ]
     }
-    }
-}
+]

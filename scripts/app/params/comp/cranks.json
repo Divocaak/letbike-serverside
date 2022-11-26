@@ -1,48 +1,52 @@
-{
-    "brand": {
+[
+    {
+        "key":"comp-cranks-brand",
         "label": "Značka",
-        "values": {
-            "0": "Aerozine",
-            "1": "Campagnolo",
-            "2": "Force",
-            "3": "FSA",
-            "4": "Prowhell",
-            "5": "Race Face",
-            "6": "Rotor",
-            "7": "Shimano",
-            "8": "SR Suntour",
-            "9": "Sram",
-            "10": "Sturney Archer",
-            "11": "Sunrace",
-            "12": "Truvativ",
-            "13": "Jiné"
-        }
+        "values": [
+            "Aerozine",
+            "Campagnolo",
+            "Force",
+            "FSA",
+            "Prowhell",
+            "Race Face",
+            "Rotor",
+            "Shimano",
+            "SR Suntour",
+            "Sram",
+            "Sturney Archer",
+            "Sunrace",
+            "Truvativ",
+            "Jiné"
+        ]
     },
-    "compatibility": {
+    {
+        "key":"comp-cranks-compatibility",
         "label": "Kompatibilita",
-        "values": {
-            "0": "1 Převodník",
-            "1": "2 Převodníky",
-            "2": "3 Převodníky"
-        }
+        "values": [
+            "1 Převodník",
+            "2 Převodníky",
+            "3 Převodníky"
+        ]
     },
-    "material": {
+    {
+        "key":"comp-cranks-material",
         "label": "Materiál",
-        "values": {
-            "0": "Karbon",
-            "1": "Ocel",
-            "2": "Hliník"
-        }
+        "values": [
+            "Karbon",
+            "Ocel",
+            "Hliník"
+        ]
     },
-    "axis": {
+    {
+        "key":"comp-cranks-axis",
         "label": "Osa",
-        "values": {
-            "0": "DUB",
-            "1": "29 mm",
-            "2": "24 mm",
-            "3": "BB30",
-            "4": "4hran",
-            "5": "Isis"
-        }
+        "values": [
+            "DUB",
+            "29 mm",
+            "24 mm",
+            "BB30",
+            "4hran",
+            "Isis"
+        ]
     }
-}
+]

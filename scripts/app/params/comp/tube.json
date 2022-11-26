@@ -1,27 +1,29 @@
-{
-    "size": {
+[
+    {
+        "key":"comp-tube-size",
         "label": "Velikost",
-        "values": {
-            "0": "10″",
-            "1": "12″",
-            "2": "14″",
-            "3": "16″",
-            "4": "18″",
-            "5": "20″",
-            "6": "24″",
-            "7": "26″",
-            "8": "27.5″",
-            "9": "28″",
-            "10": "29″",
-            "11": "jiné"
-        }
+        "values": [
+            "10″",
+            "12″",
+            "14″",
+            "16″",
+            "18″",
+            "20″",
+            "24″",
+            "26″",
+            "27.5″",
+            "28″",
+            "29″",
+            "jiné"
+        ]
     },
-    "type": {
+    {
+        "key":"comp-tube-type",
         "label": "Ventilek",
-        "values": {
-            "0": "AV (auto/moto ventilek)",
-            "1": "FV (galuskový ventilek)",
-            "2": "DV (velo ventilek)"
-        }
+        "values": [
+            "AV (auto/moto ventilek)",
+            "FV (galuskový ventilek)",
+            "DV (velo ventilek)"
+        ]
     }
-}
+]

@@ -1,52 +1,58 @@
-{
-    "disc_switch": {
+[
+    {
+        "key": "comp-brake-disc",
+        "isSwitch": true,
         "label": "Typ",
         "values": [
             "Hydraulická",
             "Mechanická"
         ]
     },
-    "brand": {
+    {
+        "key": "comp-brake-brand",
         "label": "Značka",
-        "values": {
-            "0": "Avi",
-            "1": "Berti",
-            "3": "Btwi",
-            "4": "Haye",
-            "5": "Proma",
-            "6": "Savoy",
-            "7": "Shiman",
-            "8": "Sra",
-            "9": "Tektr",
-            "10": "Van Ryse",
-            "11": "Workshop"
-        }
+        "values": [
+            "Avi",
+            "Berti",
+            "Btwi",
+            "Haye",
+            "Proma",
+            "Savoy",
+            "Shiman",
+            "Sra",
+            "Tektr",
+            "Van Ryse",
+            "Workshop"
+        ]
     },
-    "type": {
+    {
+        "key": "comp-brake-type",
         "label": "Typ",
-        "values": {
-            "0": "kotoučová",
-            "1": "špalková",
-            "3": "bubnová"
-        }
+        "values": [
+            "kotoučová",
+            "špalková",
+            "bubnová"
+        ]
     },
-    "discSize": {
+    {
+        "key": "comp-brake-discSize",
         "label": "Velikost disku",
-        "values": {
-            "0": "140mm",
-            "1": "160mm",
-            "3": "180mm",
-            "4": "203mm",
-            "5": "jiné"
-        }
+        "values": [
+            "140mm",
+            "160mm",
+            "180mm",
+            "203mm",
+            "jiné"
+        ]
     },
-    "blockType": {
+    {
+        "key": "comp-brake-blockType",
         "label": "Typ",
-        "values": {
-            "0": "V-Brake",
-            "1": "silniční",
-            "3": "BMX",
-            "4": "Cantilever"
-        }
+        "values": [
+            "V-Brake",
+            "silniční",
+            "BMX",
+            "Cantilever"
+        ]
     }
-}
+]

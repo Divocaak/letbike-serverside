@@ -1,40 +1,47 @@
-{
-    "changeGlass_switch": {
+[
+    {
+        "key": "acc-glasses-changeGlass",
+        "isSwitch":true,
         "label": "Vyměnitelná skla",
         "values": [
             "Ano",
             "Ne"
         ]
     },
-    "changeHolder_switch": {
+    {
+        "key": "acc-glasses-changeHolder",
+        "isSwitch":true,
         "label": "Vyměnitelný nosník",
         "values": [
             "Ano",
             "Ne"
         ]
     },
-    "type": {
+    {
+        "key": "acc-glasses-type",
         "label": "Typ",
-        "values": {
-            "0": "Závodní",
-            "1": "Sportovní",
-            "2": "Lifestyle"
-        }
+        "values": [
+            "Závodní",
+            "Sportovní",
+            "Lifestyle"
+        ]
     },
-    "glass": {
+    {
+        "key": "acc-glasses-glass",
         "label": "Skla",
-        "values": {
-            "0": "fotochromatická",
-            "1": "keramická",
-            "2": "polarizační"
-        }
+        "values": [
+            "fotochromatická",
+            "keramická",
+            "polarizační"
+        ]
     },
-    "gender": {
+    {
+        "key": "acc-glasses-gender",
         "label": "Styl",
-        "values": {
-            "0": "Pánské",
-            "1": "Dámské",
-            "2": "Dětské"
-        }
+        "values": [
+            "Pánské",
+            "Dámské",
+            "Dětské"
+        ]
     }
-}
+]
