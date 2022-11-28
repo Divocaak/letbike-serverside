@@ -1,66 +1,67 @@
-{
-    "type": {
+[
+    {
+        "key": "acc-type",
         "label": "Typ",
-        "values": {
-            "0": {
+        "values": [
+            {
                 "label": "Blatníky",
                 "file": "acc/mudguards"
             },
-            "1": {
+            {
                 "label": "Brašny/Batohy"
             },
-            "2": {
+            {
                 "label": "Brýle",
                 "file": "acc/glasses"
             },
-            "3": {
+            {
                 "label": "Cyklocomputery",
                 "file": "acc/comps"
             },
-            "4": {
+            {
                 "label": "Dětstké sedačky",
                 "file": "acc/kidSaddles"
             },
-            "5": {
+            {
                 "label": "Helmy",
                 "file": "acc/helmets"
             },
-            "6": {
+            {
                 "label": "Hustilky",
                 "file": "acc/pumps"
             },
-            "7": {
+            {
                 "label": "Držáky na lahev",
                 "file": "acc/bottleHolders"
             },
-            "8": {
+            {
                 "label": "Nářadí",
                 "file": "acc/tools"
             },
-            "9": {
+            {
                 "label": "Nosiče",
                 "file": "acc/racks"
             },
-            "10": {
+            {
                 "label": "Oblečení",
                 "file": "acc/clothes"
             },
-            "11": {
+            {
                 "label": "Obuv",
                 "file": "acc/boots"
             },
-            "12": {
+            {
                 "label": "Světla",
                 "file": "acc/lights"
             },
-            "13": {
+            {
                 "label": "Zámky",
                 "file": "acc/locks"
             },
-            "14": {
+            {
                 "label": "Nosiče na auto",
                 "file": "acc/carRacks"
             }
-        }
+        ]
     }
-}
+]
