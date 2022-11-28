@@ -1,9 +1,5 @@
 <?php
-$json = loopAllOptions("general");
-
-echo "<pre>";
-echo json_encode($json);
-echo "</pre>";
+echo json_encode(loopAllOptions("general"));
 
 function loopAllOptions($path)
 {
