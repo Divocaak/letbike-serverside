@@ -4,8 +4,8 @@
         "isSwitch":true,
         "label": "Vyměnitelná skla",
         "values": [
-            "Ano",
-            "Ne"
+            "Ne",
+            "Ano"
         ]
     },
     {
@@ -13,8 +13,8 @@
         "isSwitch":true,
         "label": "Vyměnitelný nosník",
         "values": [
-            "Ano",
-            "Ne"
+            "Ne",
+            "Ano"
         ]
     },
     {

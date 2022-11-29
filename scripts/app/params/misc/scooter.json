@@ -4,8 +4,8 @@
         "isSwitch": true,
         "label": "Počítač",
         "values": [
-            "Ano",
-            "Ne"
+            "Ne",
+            "Ano"
         ]
     },
     {
