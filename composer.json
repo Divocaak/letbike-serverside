@@ -20,7 +20,8 @@
 		"nette/utils": "^3.2",
 		"latte/latte": "^2.11 || ^3.0",
 		"tracy/tracy": "^2.8",
-		"phpstan/phpstan-nette": "^1.1"
+		"phpstan/phpstan-nette": "^1.1",
+		"contributte/apitte": "^0.10.1"
 	},
 	"require-dev": {
 		"nette/tester": "^2.3",

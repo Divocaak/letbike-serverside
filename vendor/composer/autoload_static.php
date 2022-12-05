@@ -7,6 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInitbaffb8a8445739b6af190f33738c6458
 {
     public static $files = array (
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
         'd507e002f7fce7f0c6dbf1f22edcb902' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/functions.php',
     );
@@ -18,11 +20,33 @@ class ComposerStaticInitbaffb8a8445739b6af190f33738c6458
         ),
         'P' => 
         array (
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Cache\\' => 10,
             'PHPStan\\' => 8,
+        ),
+        'K' => 
+        array (
+            'Koriym\\Attributes\\' => 18,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+        ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Lexer\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
+        ),
+        'C' => 
+        array (
+            'Contributte\\Psr7\\' => 17,
+            'Contributte\\Middlewares\\' => 24,
+            'Contributte\\DI\\' => 15,
         ),
         'A' => 
         array (
             'App\\' => 4,
+            'Apitte\\' => 7,
         ),
     );
 
@@ -31,13 +55,53 @@ class ComposerStaticInitbaffb8a8445739b6af190f33738c6458
         array (
             0 => __DIR__ . '/..' . '/symfony/thanks/src',
         ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
         'PHPStan\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpstan/phpstan-nette/src',
         ),
+        'Koriym\\Attributes\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/koriym/attributes/src',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'Doctrine\\Common\\Lexer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Contributte\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/contributte/psr7-http-message/src',
+        ),
+        'Contributte\\Middlewares\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/contributte/middlewares/src',
+        ),
+        'Contributte\\DI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/contributte/di/src',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
+        ),
+        'Apitte\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/contributte/apitte/src',
         ),
     );
 
