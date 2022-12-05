@@ -1,0 +1,23 @@
+parameters:
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+		Apitte: Apitte\Presenter\*Presenter
+
+
+session:
+	expiration: 14 days
+
+
+di:
+	export:
+		parameters: no
+		tags: no
+
+
+security:
+	users:
+		admin: secret  # user 'admin', password 'secret'

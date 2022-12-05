@@ -1,0 +1,77 @@
+{
+  "name": "contributte/apitte",
+  "description": "An opinionated and enjoyable API framework based on Nette Framework. Supporting content negotiation, debugging, middlewares, attributes, annotations and loving openapi/swagger.",
+  "keywords": [
+    "api",
+    "apitte",
+    "http",
+    "rest",
+    "nette",
+    "annotation"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/contributte/apitte",
+  "authors": [
+    {
+      "name": "Milan Felix Šulc",
+      "homepage": "https://f3l1x.io"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*",
+    "contributte/psr7-http-message": "~0.7.0",
+    "contributte/middlewares": "^0.10.0",
+    "doctrine/annotations": "^1.13",
+    "koriym/attributes": "^1.0.2",
+    "nette/utils": "^3.2.7"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.5.0",
+    "nette/application": "^3.0.0",
+    "nette/di": "^3.0.0",
+    "nette/http": "^3.0.1",
+    "nettrine/annotations": "^0.7.0",
+    "ninjify/nunjuck": "^0.4",
+    "ninjify/qa": "^0.13",
+    "phpstan/phpstan": "^1.8.5",
+    "phpstan/phpstan-deprecation-rules": "^1.1.0",
+    "phpstan/phpstan-nette": "^1.1.0",
+    "phpstan/phpstan-strict-rules": "^1.1.0",
+    "psr/log": "^1.1|^2.0|^3.0",
+    "symfony/console": "^5.4.3 || ^6.0.0",
+    "symfony/validator": "^5.4.3 || ^6.0",
+    "symfony/yaml": "^5.4.3 || ^6.0.0",
+    "tracy/tracy": "^2.6.0"
+  },
+  "conflict": {
+    "nette/tester": "<2.4.1"
+  },
+  "provide": {
+    "psr/http-message-implementation": "1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Apitte\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.10.x-dev"
+    }
+  }
+}
