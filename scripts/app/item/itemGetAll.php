@@ -2,16 +2,20 @@
 include_once "../../config.php";
 $_POST = json_decode(file_get_contents("php://input"), true);
 
-/* $_POST["status"] = 1;
-$_POST["params"]["usedSwitch"] = "true"; */
-
 $_POST["status"] = 1;
+//$_POST["params"]["usedSwitch"] = "true"; */
+
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $items = [];
 $stmt = $link->prepare("SELECT i.id, i.seller_id, i.sold_to, i.name, i.description, i.price, i.date_added, i.date_sold, i.imgs, i.status_id, u.name AS sellerName, u.mail AS sellerMail
-    FROM items i INNER JOIN users u ON i.seller_id=u.id WHERE i.status_id=? ORDER BY i.date_added DESC;");
-$stmt->bind_param("i", $_POST["status"]);
+    FROM items i INNER JOIN users u ON i.seller_id=u.id WHERE i.status_id=?" . (isset($_POST["sellerId"]) ? " AND i.seller_id=?" : "") . (isset($_POST["soldTo"]) ? " AND i.sold_to=?" : "") . " ORDER BY i.date_added DESC;");
+    $sellerId = $_POST["sellerId"] ?? "";
+    $soldTo = $_POST["soldTo"] ?? "";
+$stmt->bind_param("iss", $_POST["status"], $sellerId, $soldTo);
+echo $link->error;
 $stmt->execute();
 if ($result = $stmt->get_result()) {
+    $item = null;
     while ($row = $result->fetch_assoc()) {
         $item = [
             "id" => $row["id"],
@@ -57,7 +61,9 @@ if ($result = $stmt->get_result()) {
         }
     }
 
-    $items[] = $item;
+    if($item != null){
+        $items[] = $item;
+    }
 }
 
 echo json_encode($items);
