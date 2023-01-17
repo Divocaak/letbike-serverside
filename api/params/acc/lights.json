@@ -1,0 +1,11 @@
+[
+    {
+        "key": "acc-lights-type",
+        "isSwitch": true,
+        "label": "Typ",
+        "values": [
+            "Přední",
+            "Zadní"
+        ]
+    }
+]

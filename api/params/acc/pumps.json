@@ -1,0 +1,13 @@
+[
+    {
+        "key": "acc-pumps-type",
+        "label": "Typ",
+        "values": [
+            "Dílenské",
+            "Cestovní",
+            "Na vidlice",
+            "Jednorázové bombičky",
+            "Náhradní díly"
+        ]
+    }
+]

@@ -1,0 +1,101 @@
+[
+    {
+        "key": "comp-fork-type",
+        "isSwitch": true,
+        "label": "Typ vidlice",
+        "values": [
+            "Odpužená",
+            "Pevná"
+        ]
+    },
+    {
+        "key": "comp-fork-suspension",
+        "isSwitch": true,
+        "label": "Odpružení",
+        "values": [
+            "Vzduchové",
+            "Hydraulické"
+        ]
+    },
+    {
+        "key": "comp-fork-brand",
+        "label": "Značka",
+        "values": [
+            "Cane Creek",
+            "Cannondale",
+            "Cyklo Žitný",
+            "DVO suspension",
+            "Éclat",
+            "Felt",
+            "Force",
+            "Fox",
+            "GT",
+            "Macneil",
+            "Magura",
+            "Manitou",
+            "Marzocchi",
+            "Maxbike",
+            "MRX",
+            "M-Wave",
+            "Noxon",
+            "NS Bikes",
+            "Odyssey",
+            "Öhlins",
+            "Pells",
+            "Rock Shox",
+            "RST",
+            "Spinner",
+            "SR Suntour",
+            "Total BMX",
+            "TWN",
+            "WTP",
+            "Zoom",
+            "Jiné"
+        ]
+    },
+    {
+        "key": "comp-fork-size",
+        "label": "Velikost",
+        "values": [
+            "12″",
+            "14″",
+            "16″",
+            "20″",
+            "23″",
+            "24″",
+            "25″",
+            "26″",
+            "27,5″",
+            "28″",
+            "29″"
+        ]
+    },
+    {
+        "key": "comp-fork-wheelCompatibility",
+        "label": "Kompatibilita",
+        "values": [
+            "Rychloupínák",
+            "Pevná osa",
+            "Matice"
+        ]
+    },
+    {
+        "key": "comp-fork-material",
+        "label": "Materiál",
+        "values": [
+            "Ocel",
+            "Karbon",
+            "Hliník",
+            "Titan"
+        ]
+    },
+    {
+        "key": "comp-fork-materialColumn",
+        "label": "Materiál sloupku",
+        "values": [
+            "Karbon",
+            "Ocel",
+            "Hliník"
+        ]
+    }
+]

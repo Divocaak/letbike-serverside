@@ -1,0 +1,53 @@
+[
+    {
+        "key": "comp-frame-size",
+        "label": "Velikost",
+        "values": [
+            "14 - 15",
+            "15 - 16",
+            "16 - 17",
+            "17 - 18",
+            "18 - 19",
+            "19 - 20",
+            "20 - 21",
+            "21 - 22",
+            "22 - 23",
+            "23 - 24",
+            "48 - 50",
+            "50 - 51",
+            "51 - 52",
+            "52 - 54",
+            "54 - 56",
+            "56 - 58",
+            "58 - 60",
+            "60 - 62",
+            "62 - 64",
+            "jiné"
+        ]
+    },
+    {
+        "key": "comp-frame-fork",
+        "label": "Vidlice",
+        "values": [
+            "24",
+            "26",
+            "27.5",
+            "28",
+            "29",
+            "jiné"
+        ]
+    },
+    {
+        "key": "comp-frame-type",
+        "label": "Typ",
+        "values": [
+            "Horské MTB",
+            "Krosové",
+            "Cyklokrosové",
+            "Silniční",
+            "Freeride, Downhill",
+            "Dětské",
+            "BMX"
+        ]
+    }
+]

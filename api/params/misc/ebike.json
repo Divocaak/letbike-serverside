@@ -1,0 +1,23 @@
+[
+    {
+        "key": "misc-ebike-motorPlacement",
+        "label": "Umístění motoru",
+        "isSwitch": true,
+        "values": [
+            "Středový",
+            "Nábojový"
+        ]
+    },
+    {
+        "key": "misc-ebike-brand",
+        "label": "Značka",
+        "values": [
+            "Crussis",
+            "Haibike",
+            "Apache",
+            "Rock Machine",
+            "Leader Fox",
+            "Jiné"
+        ]
+    }
+]

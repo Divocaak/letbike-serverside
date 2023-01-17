@@ -1,0 +1,52 @@
+[
+    {
+        "key":"comp-cranks-brand",
+        "label": "Značka",
+        "values": [
+            "Aerozine",
+            "Campagnolo",
+            "Force",
+            "FSA",
+            "Prowhell",
+            "Race Face",
+            "Rotor",
+            "Shimano",
+            "SR Suntour",
+            "Sram",
+            "Sturney Archer",
+            "Sunrace",
+            "Truvativ",
+            "Jiné"
+        ]
+    },
+    {
+        "key":"comp-cranks-compatibility",
+        "label": "Kompatibilita",
+        "values": [
+            "1 Převodník",
+            "2 Převodníky",
+            "3 Převodníky"
+        ]
+    },
+    {
+        "key":"comp-cranks-material",
+        "label": "Materiál",
+        "values": [
+            "Karbon",
+            "Ocel",
+            "Hliník"
+        ]
+    },
+    {
+        "key":"comp-cranks-axis",
+        "label": "Osa",
+        "values": [
+            "DUB",
+            "29 mm",
+            "24 mm",
+            "BB30",
+            "4hran",
+            "Isis"
+        ]
+    }
+]

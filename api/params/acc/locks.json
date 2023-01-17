@@ -1,0 +1,13 @@
+[
+    {
+        "key": "acc-locks-type",
+        "label": "Typ",
+        "values": [
+            "Lankové",
+            "Řetězové",
+            "Skládací",
+            "U-zámky",
+            "Kódové"
+        ]
+    }
+]

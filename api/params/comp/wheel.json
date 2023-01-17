@@ -1,0 +1,139 @@
+[
+    {
+        "key": "comp-wheel-spokes",
+        "isSwitch": true,
+        "label": "Typ drátů",
+        "values": [
+            "Kulaté",
+            "Ploché"
+        ]
+    },
+    {
+        "key": "comp-wheel-type",
+        "isSwitch": true,
+        "label": "Provedení náboje",
+        "values": [
+            "Přední",
+            "Zadní"
+        ]
+    },
+    {
+        "key": "comp-wheel-brakes",
+        "isSwitch": true,
+        "label": "Typ brzd",
+        "values": [
+            "Kotoučové",
+            "V-Brzdy"
+        ]
+    },
+    {
+        "key": "comp-wheel-discBrakes",
+        "isSwitch": true,
+        "label": "Uchycení disku",
+        "values": [
+            "CenterLock",
+            "6 děr"
+        ]
+    },
+    {
+        "key": "comp-wheel-cassette",
+        "isSwitch": true,
+        "label": "Provedení kazety",
+        "values": [
+            "Závit",
+            "Ořech"
+        ]
+    },
+    {
+        "key": "comp-wheel-brand",
+        "label": "Značka",
+        "values": [
+            "Author",
+            "Bontrager",
+            "Campagnolo",
+            "Dema",
+            "DT Swiss",
+            "Easton",
+            "FFWD",
+            "Force",
+            "FSA",
+            "Fulcrum",
+            "Giant",
+            "Kellys",
+            "Lightweight",
+            "Mach",
+            "Mavic",
+            "Miche",
+            "Novatech",
+            "Remerx",
+            "Rodi",
+            "Shimano",
+            "Specialized",
+            "Sram",
+            "Veltec",
+            "Vision Tech",
+            "XLC",
+            "Zipp"
+        ]
+    },
+    {
+        "key": "comp-wheel-size",
+        "label": "Velikost",
+        "values": [
+            "12″",
+            "14″",
+            "16″",
+            "20″",
+            "23″",
+            "24″",
+            "25″",
+            "26″",
+            "27,5″",
+            "28″",
+            "29″"
+        ]
+    },
+    {
+        "key": "comp-wheel-material",
+        "label": "Materiál",
+        "values": [
+            "Karbon",
+            "Hlíník",
+            "Ocel"
+        ]
+    },
+    {
+        "key": "comp-wheel-axis",
+        "label": "Osa",
+        "values": [
+            "Pevná 20 mm",
+            "Pevná 15 mm",
+            "Pevná 12mm",
+            "Rychloupínák",
+            "Na matice"
+        ]
+    },
+    {
+        "key": "comp-wheel-nut",
+        "label": "Značka ořechu",
+        "values": [
+            "Shimano",
+            "Sram",
+            "Campagnolo"
+        ]
+    },
+    {
+        "key": "comp-wheel-compatibility",
+        "label": "Kompatibilita",
+        "values": [
+            "12 rychlostí",
+            "11 rychlostí",
+            "10 rychlostí",
+            "9 rychlostí",
+            "8 rychlostí",
+            "7 rychlostí",
+            "6 rychlostí",
+            "1 rychlost"
+    ]
+    }
+]

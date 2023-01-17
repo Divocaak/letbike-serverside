@@ -1,0 +1,40 @@
+[
+    {
+        "key": "comp-seatpost-type",
+        "label": "Typ",
+        "values": [
+            "Horské MTB",
+            "silníční",
+            "odpružené",
+            "teleskopické"
+        ]
+    },
+    {
+        "key": "comp-seatpost-length",
+        "label": "Délka",
+        "values": [
+            "330mm",
+            "350mm",
+            "400mm",
+            "jiné"
+        ]
+    },
+    {
+        "key": "comp-seatpost-material",
+        "label": "Materiál",
+        "values": [
+            "karbon",
+            "hliník",
+            "ocel"
+        ]
+    },
+    {
+        "key": "comp-seatpost-size",
+        "label": "Průměr",
+        "values": [
+            "30.9",
+            "31.6",
+            "ostatní"
+        ]
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "key": "comp-grips-type",
+        "label": "Typ",
+        "values": [
+            "Gripy Lock-On",
+            "Gripy klasické",
+            "Gripy ergonomické",
+            "Gripy dětské",
+            "Gripy s rohy",
+            "ostatní",
+            "Omotávky",
+            "Záslepky do řídítek",
+            "Příslušenství"
+    ]
+    }
+]

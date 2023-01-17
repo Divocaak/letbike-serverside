@@ -1,0 +1,13 @@
+[
+    {
+        "key": "acc-kidSaddles-type",
+        "label": "Typ",
+        "values": [
+            "Na řidítka",
+            "Na rám",
+            "Pod sedlo",
+            "Vodící tyče",
+            "Vozík za kolo"
+        ]
+    }
+]

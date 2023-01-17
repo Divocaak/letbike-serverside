@@ -1,0 +1,99 @@
+[
+    {
+        "key": "comp-type",
+        "label": "Typ",
+        "values": [
+            {
+                "label": "Zapletená kola",
+                "file": "comp/wheel"
+            },
+            {
+                "label": "Kliky",
+                "file": "comp/cranks"
+            },
+            {
+                "label": "Převodníky",
+                "file": "comp/converter"
+            },
+            {
+                "label": "Sedla",
+                "file": "comp/saddle"
+            },
+            {
+                "label": "Vidlice",
+                "file": "comp/fork"
+            },
+            {
+                "label": "Bowdeny a lanka",
+                "file": "comp/bowden"
+            },
+            {
+                "label": "Brzdy",
+                "file": "comp/brake"
+            },
+            {
+                "label": "Duše",
+                "file": "comp/tube"
+            },
+            {
+                "label": "Gripy a omotávky",
+                "file": "comp/grips"
+            },
+            {
+                "label": "Hlavová složení",
+                "file": "comp/headset"
+            },
+            {
+                "label": "Kazety a pastorky",
+                "file": "comp/cassette"
+            },
+            {
+                "label": "Náboje a osy",
+                "file": "comp/axis"
+            },
+            {
+                "label": "Pedály",
+                "file": "comp/pedals"
+            },
+            {
+                "label": "Pláště/Galusky",
+                "file": "comp/tire"
+            },
+            {
+                "label": "Představce",
+                "file": "comp/stem"
+            },
+            {
+                "label": "Příslušenství na elektrokola",
+                "file": "comp/ebike"
+            },
+            {
+                "label": "Ráfky",
+                "file": "comp/rims"
+            },
+            {
+                "label": "Rámy",
+                "file": "comp/frame"
+            },
+            {
+                "label": "Řazení",
+                "file": "comp/speed"
+            },
+            {
+                "label": "Řídítka",
+                "file": "comp/handlebars"
+            },
+            {
+                "label": "Sedlovky",
+                "file": "comp/seatpost"
+            },
+            {
+                "label": "Tlumiče",
+                "file": "comp/shock"
+            },
+            {
+                "label": "Jiné"
+            }
+        ]
+    }
+]

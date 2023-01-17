@@ -1,0 +1,11 @@
+[
+    {
+        "key": "acc-bottleHolders-type",
+        "label": "Umístění",
+        "values": [
+            "Do rámu",
+            "Pod sedlo",
+            "Na řídítka"
+        ]
+    }
+]

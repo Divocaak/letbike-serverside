@@ -1,0 +1,15 @@
+[
+    {
+        "key": "comp-bowden-type",
+        "label": "Typ",
+        "values": [
+            "Lanka brzdící",
+            "Lanka řadící",
+            "Bowdeny",
+            "Koncovky lanka",
+            "Konvovky bowdenu",
+            "Kompletní sady",
+            "Příslušenství"
+        ]
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "key": "comp-cassette-type",
+        "label": "Typ",
+        "values": [
+            "12 rychlostní",
+            "11 rychlostní",
+            "10 rychlostní",
+            "9 rychlostní",
+            "8 rychlostní",
+            "7 rychlostní",
+            "6 rychlostní",
+            "5 rychlostní",
+            "Volnokolečka",
+            "Kryty",
+            "Příslušenství"
+        ]
+    }
+]

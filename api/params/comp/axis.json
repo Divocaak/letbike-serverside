@@ -1,0 +1,16 @@
+[
+    {
+        "key": "comp-axis-type",
+        "label": "Typ",
+        "values": [
+            "Přední náboje",
+            "Zadní náboje",
+            "Volnoběžné náboje",
+            "Vícerychlostní náboje",
+            "Rychloupínáky a Osy",
+            "Pastorky",
+            "Osy",
+            "Příslušenství"
+        ]
+    }
+]

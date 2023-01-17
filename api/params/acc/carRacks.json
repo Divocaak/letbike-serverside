@@ -1,0 +1,11 @@
+[
+    {
+        "key": "acc-carRacks-placement",
+        "isSwitch": true,
+        "label": "Umístění",
+        "values": [
+            "Na tažné",
+            "Na střechu"
+        ]
+    }
+]

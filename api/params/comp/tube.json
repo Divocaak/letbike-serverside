@@ -1,0 +1,29 @@
+[
+    {
+        "key":"comp-tube-size",
+        "label": "Velikost",
+        "values": [
+            "10″",
+            "12″",
+            "14″",
+            "16″",
+            "18″",
+            "20″",
+            "24″",
+            "26″",
+            "27.5″",
+            "28″",
+            "29″",
+            "jiné"
+        ]
+    },
+    {
+        "key":"comp-tube-type",
+        "label": "Ventilek",
+        "values": [
+            "AV (auto/moto ventilek)",
+            "FV (galuskový ventilek)",
+            "DV (velo ventilek)"
+        ]
+    }
+]

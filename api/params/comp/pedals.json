@@ -1,0 +1,13 @@
+[
+    {
+        "key": "comp-pedals-type",
+        "label": "Typ",
+        "values": [
+            "klasické",
+            "nášlapné ",
+            "dětské",
+            "Kufry pro nášlapné pedály",
+            "Příslušenství"
+        ]
+    }
+]

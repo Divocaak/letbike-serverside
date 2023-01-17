@@ -1,0 +1,84 @@
+[
+    {
+        "key": "comp-tire-material",
+        "isSwitch": true,
+        "label": "Materiál",
+        "values": [
+            "Kevlar",
+            "Drát"
+        ]
+    },
+    {
+        "key": "comp-tire-size",
+        "label": "Velikost",
+        "values": [
+            "10″",
+            "12″",
+            "14″",
+            "16″",
+            "18″",
+            "20″",
+            "24″",
+            "26″",
+            "27.5″",
+            "28″",
+            "29″",
+            "jiné"
+        ]
+    },
+    {
+        "key": "comp-tire-width",
+        "label": "Šířka",
+        "values": [
+            "30C",
+            "32C",
+            "35C",
+            "38C",
+            "jiné"
+        ]
+    },
+    {
+        "key": "comp-tire-brand",
+        "label": "Značka",
+        "values": [
+            "Maxxis",
+            "Kenda",
+            "Continental",
+            "Mitas",
+            "Force",
+            "Bontrager",
+            "CST",
+            "Donnelly",
+            "Elite",
+            "Giant",
+            "Challenge",
+            "Mavic",
+            "Michelin",
+            "Onza",
+            "Panaracer",
+            "Pirelli",
+            "Point",
+            "Ritchey",
+            "Rubena",
+            "Schwalbe",
+            "Tacx",
+            "Tufo",
+            "Vittoria",
+            "WTB",
+            "ZIPP",
+            "jiné"
+        ]
+    },
+    {
+        "key": "comp-tire-type",
+        "label": "Typ",
+        "values": [
+            "Silniční",
+            "MTB Horské",
+            "Crossová",
+            "Dětské",
+            "Galusky",
+            "Velopásky"
+        ]
+    }
+]

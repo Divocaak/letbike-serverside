@@ -1,0 +1,13 @@
+[
+    {
+        "key":"comp-stem-type",
+        "label": "Typ",
+        "values": [
+            "Ahead průměr řidítek 31,8mm",
+            "Ahead průměr řidítek 25,4mm",
+            "Ahead průměr řidítek 35mm",
+            "Ahead ostatní Ø",
+            "Ostatní"
+    ]
+    }
+]

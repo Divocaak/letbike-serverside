@@ -1,0 +1,48 @@
+[
+    {
+        "key": "comp-handlebars-type",
+        "label": "Typ",
+        "values": [
+            "Berany",
+            "rovná",
+            "vlaštovky",
+            "Bullhorn",
+            "BMX",
+            "Aerodynamická",
+            "Cruiser",
+            "Butterfly",
+            "Moustache"
+        ]
+    },
+    {
+        "key": "comp-handlebars-material",
+        "label": "Materiál",
+        "values": [
+            "karbon",
+            "hliníkové",
+            "ocel"
+        ]
+    },
+    {
+        "key": "comp-handlebars-width",
+        "label": "Šířka",
+        "values": [
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "jiné"
+        ]
+    },
+    {
+        "key": "comp-handlebars-size",
+        "label": "Průměr",
+        "values": [
+            "25.4",
+            "31.8",
+            "jiné"
+        ]
+    }
+]
