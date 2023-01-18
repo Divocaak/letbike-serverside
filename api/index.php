@@ -9,6 +9,10 @@ if (!isset($uri[4]) || !isset($uri[5])) {
     exit();
 }
 
+if(isset($_POST)){
+    $_POST = json_decode(file_get_contents("php://input"), true);
+}
+
 if ($uri[4] == 'item') {
     require PROJECT_ROOT_PATH . "/Controller/ItemController.php";
     $objFeedController = new ItemController();
@@ -21,5 +25,9 @@ if ($uri[4] == 'item') {
 } else if ($uri[4] == "schema") {
     require PROJECT_ROOT_PATH . "/Controller/SchemaController.php";
     $objFeedController = new SchemaController();
+    $objFeedController->{$uri[5]}();
+} else if ($uri[4] == "user") {
+    require PROJECT_ROOT_PATH . "/Controller/UserController.php";
+    $objFeedController = new UserController();
     $objFeedController->{$uri[5]}();
 }

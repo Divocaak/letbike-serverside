@@ -15,7 +15,19 @@ class Database
             throw new Exception($e->getMessage());
         }
     }
-    
+
+    public function insert($query = "", $types = "", $params = [])
+    {
+        try {
+            $stmt = $this->executeStatement($query, $types, $params);
+            $stmt->close();
+            return true;
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+        return false;
+    }
+
     public function select($query = "", $types = "", $params = [])
     {
         try {

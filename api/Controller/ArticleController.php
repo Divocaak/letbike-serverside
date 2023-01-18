@@ -6,8 +6,8 @@ class ArticleController extends BaseController
         $e = "";
         if (strtoupper($_SERVER["REQUEST_METHOD"]) == "GET") {
             try {
-                $articleModel = new ArticleModel();
-                $responseData = json_encode($articleModel->getArticles());
+                $model = new ArticleModel();
+                $responseData = json_encode($model->getArticles());
             } catch (Error $err) {
                 $e = $err->getMessage();
                 $strErrorHeader = "HTTP/1.1 500 Internal Server Error";

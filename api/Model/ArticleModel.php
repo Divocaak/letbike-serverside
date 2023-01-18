@@ -6,6 +6,6 @@ class ArticleModel extends Database
 {
     public function getArticles()
     {
-        return $this->select("SELECT id, name, date_added FROM articles WHERE status_id=1 ORDER BY date_added;");
+        return $this->select("SELECT id, name, date_added FROM article WHERE status_id=1 ORDER BY date_added;");
     }
 }

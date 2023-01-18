@@ -2,15 +2,13 @@
 
 class ItemController extends BaseController
 {
-    // TODO rewrite
     public function list()
     {
         $e = "";
         $_POST = json_decode(file_get_contents("php://input"), true);
         if (strtoupper($_SERVER["REQUEST_METHOD"]) == "POST") {
             try {
-                $itemModel = new ItemModel();
-                // TODO rest of params
+                $model = new ItemModel();
                 $limit = $statusId = $soldTo = $sellerId = null;
                 if (isset($_POST['limit']))
                     $limit = $_POST['limit'];
@@ -28,7 +26,7 @@ class ItemController extends BaseController
                 if (isset($_POST['sellerId']))
                     $sellerId = $_POST['sellerId'];
 
-                $responseData = json_encode($itemModel->getItems($limit, $statusId, $sellerId, $soldTo));
+                $responseData = json_encode($model->getItems($limit, $statusId, $sellerId, $soldTo));
             } catch (Error $err) {
                 $e = $err->getMessage();
                 $strErrorHeader = "HTTP/1.1 500 Internal Server Error";
