@@ -28,13 +28,22 @@ class Database
         return false;
     }
 
-    public function select($query = "", $types = "", $params = [])
+    public function select($query = "", $types = "", $params = [], &$toRet = null, $function = null)
     {
         try {
             $stmt = $this->executeStatement($query, $types, $params);
-            $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+            if (!isset($function) || !isset($toRet)) {
+                $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+                $stmt->close();
+                return $result;
+            }
+
+            if ($result = $stmt->get_result()) {
+                while ($row = $result->fetch_assoc()) {
+                    $toRet[] = $function($row);
+                }
+            }
             $stmt->close();
-            return $result;
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
         }

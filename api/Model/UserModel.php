@@ -10,7 +10,7 @@ class UserModel extends Database
         if ($returnVal != null) {
             return $returnVal[0];
         } else {
-            return $this->insert("INSERT INTO user (id, name, mail) VALUES (?, ?, ?);", "sss", [$userId, $name, $mail]) ? ["status_id" => 1] : ["error" => "insert returned false"];
+            return $this->insert("INSERT INTO user (id, name, mail) VALUES (?, ?, ?);", "sss", [$userId, $name, $mail]) ? ["id_status" => 1] : throw new Error("insert error");
         }
     }
 }
