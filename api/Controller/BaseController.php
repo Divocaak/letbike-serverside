@@ -49,4 +49,40 @@ class BaseController
         echo $data;
         exit;
     }
+
+    protected function dataValidator(&$destination, $toVerify, $isMandatory = true)
+    {
+        if (isset($toVerify))
+            $destination = $toVerify;
+        else if ($isMandatory)
+            throw new Error("mandatory variable missing, check documentation and sent data");
+    }
+
+    protected function postMethod($method)
+    {
+        $e = "";
+        if (strtoupper($_SERVER["REQUEST_METHOD"]) == "POST") {
+            try {
+                $responseData = json_encode($method(json_decode(file_get_contents("php://input"), true)));
+            } catch (Error $err) {
+                $e = $err->getMessage();
+                $strErrorHeader = "HTTP/1.1 500 Internal Server Error";
+            }
+        } else {
+            $e = "Method not supported";
+            $strErrorHeader = "HTTP/1.1 422 Unprocessable Entity";
+        }
+
+        if (!$e) {
+            $this->sendOutput(
+                $responseData,
+                ["Content-Type: application/json", "HTTP/1.1 200 OK"]
+            );
+        } else {
+            $this->sendOutput(
+                json_encode(["error" => $e]),
+                ["Content-Type: application/json", $strErrorHeader]
+            );
+        }
+    }
 }

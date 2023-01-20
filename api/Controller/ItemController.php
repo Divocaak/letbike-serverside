@@ -4,112 +4,47 @@ class ItemController extends BaseController
 {
     public function list()
     {
-        // TODO DRY, something like postRequestBody
-        $e = "";
-        $_POST = json_decode(file_get_contents("php://input"), true);
-        if (strtoupper($_SERVER["REQUEST_METHOD"]) == "POST") {
-            try {
-                $model = new ItemModel();
-                $limit = $statusId = $soldTo = $sellerId = null;
+        $this->postMethod(function ($postData) {
+            $model = new ItemModel();
+            
+            $limit = $id_status = $id_buyer = $id_seller = null;
+            $this->dataValidator($limit, $postData["limit"]);
+            $this->dataValidator($id_status, $postData["id_status"]);
+            $this->dataValidator($id_buyer, $postData["id_buyer"] ?? null, false);
+            $this->dataValidator($id_seller, $postData["id_seller"] ?? null, false);
 
-                // TODO DRY, data validator
-                if (isset($_POST['limit']))
-                    $limit = $_POST['limit'];
-                else
-                    throw new Error("mandatory variable not found (limit)");
-
-                if (isset($_POST['statusId']))
-                    $statusId = $_POST['statusId'];
-                else
-                    throw new Error("mandatory variable not found (statusId)");
-
-                if (isset($_POST['soldTo']))
-                    $soldTo = $_POST['soldTo'];
-
-                if (isset($_POST['sellerId']))
-                    $sellerId = $_POST['sellerId'];
-
-                $responseData = json_encode($model->getItems($limit, $statusId, $sellerId, $soldTo));
-            } catch (Error $err) {
-                $e = $err->getMessage();
-                $strErrorHeader = "HTTP/1.1 500 Internal Server Error";
-            }
-        } else {
-            $e = "Method not supported";
-            $strErrorHeader = "HTTP/1.1 422 Unprocessable Entity";
-        }
-
-        if (!$e) {
-            $this->sendOutput(
-                $responseData,
-                ["Content-Type: application/json", "HTTP/1.1 200 OK"]
-            );
-        } else {
-            $this->sendOutput(
-                json_encode(["error" => $e]),
-                ["Content-Type: application/json", $strErrorHeader]
-            );
-        }
+            return $model->getItems($limit, $id_status, $id_seller, $id_buyer);
+        });
     }
 
-    public function add(){
-        $e = "";
-        $_POST = json_decode(file_get_contents("php://input"), true);
-        if (strtoupper($_SERVER["REQUEST_METHOD"]) == "POST") {
-            try {
-                $model = new ItemModel();
+    public function add()
+    {
+        $this->postMethod(function ($postData) {
+            $model = new ItemModel();
 
-                $id_user = $name = $description = $price = $imgs = $params = null;
-                if (isset($_POST['id_user']))
-                    $id_user = $_POST['id_user'];
-                else
-                    throw new Error("mandatory variable not found (id_user)");
+            $id_user = $name = $description = $price = $imgs = $params = null;
+            $this->dataValidator($id_user, $postData["id_user"]);
+            $this->dataValidator($name, $postData["name"]);
+            $this->dataValidator($description, $postData["description"]);
+            $this->dataValidator($price, $postData["price"]);
+            $this->dataValidator($imgs, $postData["imgs"]);
+            $this->dataValidator($params, $postData["params"]);
 
-                if (isset($_POST['name']))
-                    $name = $_POST['name'];
-                else
-                    throw new Error("mandatory variable not found (name)");
+            return $model->addItem($id_user, $name, $description, $price, $imgs, $params);
+        });
+    }
 
-                if (isset($_POST['description']))
-                    $description = $_POST['description'];
-                else
-                    throw new Error("mandatory variable not found (description)");
+    public function updateStatus()
+    {
+        $this->postMethod(function ($postData) {
+            $model = new ItemModel();
 
-                if (isset($_POST['price']))
-                    $price = $_POST['price'];
-                else
-                    throw new Error("mandatory variable not found (price)");
+            $id_item = $id_status = $id_buyer = null;
+            $this->dataValidator($id_item, $postData["id_item"]);
+            $this->dataValidator($id_status, $postData["id_status"]);
+            $this->dataValidator($id_buyer, $postData["id_buyer"] ?? null, false);
 
-                if (isset($_POST['imgs']))
-                    $imgs = $_POST['imgs'];
-                else
-                    throw new Error("mandatory variable not found (imgs)");
-
-                if (isset($_POST['params']))
-                    $params = $_POST['params'];
-                else
-                    throw new Error("mandatory variable not found (params)");
-
-                $responseData = json_encode($model->addItem($id_user, $name, $description, $price, $imgs, $params));
-            } catch (Error $err) {
-                $e = $err->getMessage();
-                $strErrorHeader = "HTTP/1.1 500 Internal Server Error";
-            }
-        } else {
-            $e = "Method not supported";
-            $strErrorHeader = "HTTP/1.1 422 Unprocessable Entity";
-        }
-
-        if (!$e) {
-            $this->sendOutput(
-                $responseData,
-                ["Content-Type: application/json", "HTTP/1.1 200 OK"]
-            );
-        } else {
-            $this->sendOutput(
-                json_encode(["error" => $e]),
-                ["Content-Type: application/json", $strErrorHeader]
-            );
-        }
+            return $model->updateStatus($id_item, $id_status, $id_buyer);
+        });
     }
 }

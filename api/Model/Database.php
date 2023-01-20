@@ -16,6 +16,13 @@ class Database
         }
     }
 
+    public function addParamTypePair(&$params, &$types, $param, $type, $checkNull = false){
+        if (!$checkNull || ($checkNull && $param != null)) {
+            $types .= $type;
+            $params[] = $param;
+        }
+    }
+
     public function insert($query = "", $types = "", $params = [])
     {
         try {
@@ -44,6 +51,18 @@ class Database
                 }
             }
             $stmt->close();
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+        return false;
+    }
+
+    public function update($query = "", $types = "", $params = [])
+    {
+        try {
+            $stmt = $this->executeStatement($query, $types, $params);
+            $stmt->close();
+            return true;
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
         }

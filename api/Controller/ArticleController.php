@@ -30,16 +30,15 @@ class ArticleController extends BaseController
         }
     }
 
+    // TODO getMethod function on BaseController, same asi getPost
     // NOTE with GET params
     /* public function list()
     {
         $e = "";
         $arrQueryStringParams = $this->getQueryStringParams();
-        // TODO is post actually
         if (strtoupper($_SERVER["REQUEST_METHOD"]) == "GET") {
             try {
                 $userModel = new ItemModel();
-                // TODO rest of params
                 $limit = $statusId = $soldTo = $sellerId = null;
                 if (isset($arrQueryStringParams['limit']))
                     $limit = $arrQueryStringParams['limit'];
