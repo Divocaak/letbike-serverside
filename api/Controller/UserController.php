@@ -12,7 +12,7 @@ class UserController extends BaseController
             $this->dataValidator($name, $postData["name"]);
             $this->dataValidator($mail, $postData["mail"]);
 
-            return $model->check($id_user, $name, $mail);
+            return ["id_status" => $model->check($id_user, $name, $mail)];
         });
     }
 }

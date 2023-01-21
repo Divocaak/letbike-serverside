@@ -18,9 +18,9 @@ class UserModel extends Database
     {
         $returnVal = $this->select("SELECT id_status FROM user WHERE id=?;", "s", [$userId]);
         if ($returnVal != null) {
-            return $returnVal[0];
+            return $returnVal[0]["id_status"];
         } else {
-            return $this->insert("INSERT INTO user (id, name, mail) VALUES (?, ?, ?);", "sss", [$userId, $name, $mail]) ? ["id_status" => 1] : throw new Error("insert error");
+            return $this->insert("INSERT INTO user (id, name, mail) VALUES (?, ?, ?);", "sss", [$userId, $name, $mail]) ? 1 : throw new Error("insert error");
         }
     }
 }

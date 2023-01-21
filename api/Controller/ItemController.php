@@ -6,14 +6,14 @@ class ItemController extends BaseController
     {
         $this->postMethod(function ($postData) {
             $model = new ItemModel();
-            
+
             $limit = $id_status = $id_buyer = $id_seller = null;
             $this->dataValidator($limit, $postData["limit"]);
             $this->dataValidator($id_status, $postData["id_status"]);
             $this->dataValidator($id_buyer, $postData["id_buyer"] ?? null, false);
             $this->dataValidator($id_seller, $postData["id_seller"] ?? null, false);
 
-            return $model->getItems($limit, $id_status, $id_seller, $id_buyer);
+            return ["items" => $model->getItems($limit, $id_status, $id_seller, $id_buyer)];
         });
     }
 
@@ -30,7 +30,7 @@ class ItemController extends BaseController
             $this->dataValidator($imgs, $postData["imgs"]);
             $this->dataValidator($params, $postData["params"]);
 
-            return $model->addItem($id_user, $name, $description, $price, $imgs, $params);
+            return ["status" => $model->addItem($id_user, $name, $description, $price, $imgs, $params)];
         });
     }
 
@@ -44,7 +44,7 @@ class ItemController extends BaseController
             $this->dataValidator($id_status, $postData["id_status"]);
             $this->dataValidator($id_buyer, $postData["id_buyer"] ?? null, false);
 
-            return $model->updateStatus($id_item, $id_status, $id_buyer);
+            return ["status" => $model->updateStatus($id_item, $id_status, $id_buyer)];
         });
     }
 }

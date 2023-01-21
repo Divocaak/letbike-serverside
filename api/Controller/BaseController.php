@@ -63,7 +63,8 @@ class BaseController
         $e = "";
         if (strtoupper($_SERVER["REQUEST_METHOD"]) == "POST") {
             try {
-                $responseData = json_encode($method(json_decode(file_get_contents("php://input"), true)));
+                $response = $method(json_decode(file_get_contents("php://input"), true));
+                $responseData = json_encode($response);
             } catch (Error $err) {
                 $e = $err->getMessage();
                 $strErrorHeader = "HTTP/1.1 500 Internal Server Error";

@@ -16,7 +16,32 @@ class Database
         }
     }
 
-    public function addParamTypePair(&$params, &$types, $param, $type, $checkNull = false){
+    public function saveImages($images, $folder, $folderIdentificator = null)
+    {
+        try {
+            $pathToImages = PROJECT_ROOT_PATH . "/uploadedImgs/" . $folder . "/";
+            if (isset($folderIdentificator)) {
+                $pathToImages = $pathToImages . $folderIdentificator;
+                if (!file_exists($pathToImages)) {
+                    mkdir($pathToImages, 0775, true);
+                }
+            }
+
+            $succ = true;
+            for ($i = 0; $i < count($images); $i++) {
+                if (!$succ) {
+                    throw new Exception("failed to save image");
+                }
+
+                $succ = imagejpeg(imagecreatefromstring(base64_decode($images[$i])), $pathToImages . "/" . $i . ".jpg", 75);
+            }
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+    }
+
+    public function addParamTypePair(&$params, &$types, $param, $type, $checkNull = false)
+    {
         if (!$checkNull || ($checkNull && $param != null)) {
             $types .= $type;
             $params[] = $param;
@@ -27,18 +52,25 @@ class Database
     {
         try {
             $stmt = $this->executeStatement($query, $types, $params);
+            if (!$stmt) {
+                throw new ErrorException("stmt error");
+            }
+
             $stmt->close();
-            return true;
-        } catch (Exception $e) {
-            throw new Exception($e->getMessage());
+        } catch (ErrorException $e) {
+            throw new ErrorException($e->getMessage());
         }
-        return false;
+        return true;
     }
 
     public function select($query = "", $types = "", $params = [], &$toRet = null, $function = null)
     {
         try {
             $stmt = $this->executeStatement($query, $types, $params);
+            if (!$stmt) {
+                throw new ErrorException("stmt error");
+            }
+
             if (!isset($function) || !isset($toRet)) {
                 $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
                 $stmt->close();
@@ -46,27 +78,31 @@ class Database
             }
 
             if ($result = $stmt->get_result()) {
+                $toRet = [];
                 while ($row = $result->fetch_assoc()) {
                     $toRet[] = $function($row);
                 }
+                $stmt->close();
+                return $toRet;
             }
-            $stmt->close();
-        } catch (Exception $e) {
-            throw new Exception($e->getMessage());
+        } catch (ErrorException $e) {
+            throw new ErrorException($e->getMessage());
         }
-        return false;
     }
 
     public function update($query = "", $types = "", $params = [])
     {
         try {
             $stmt = $this->executeStatement($query, $types, $params);
+            if (!$stmt) {
+                throw new ErrorException("stmt error");
+            }
+
             $stmt->close();
-            return true;
-        } catch (Exception $e) {
-            throw new Exception($e->getMessage());
+        } catch (ErrorException $e) {
+            throw new ErrorException($e->getMessage());
         }
-        return false;
+        return true;
     }
 
     private function executeStatement($query = "", $types = "", $params = [])
@@ -74,15 +110,20 @@ class Database
         try {
             $stmt = $this->connection->prepare($query);
             if ($stmt === false) {
-                throw new Exception("Unable to do prepared statement: " . $query);
+                throw new ErrorException("Unable to do prepared statement: " . $query);
             }
+
             if ($params) {
                 $stmt->bind_param($types, ...$params);
             }
-            $stmt->execute();
+
+            if ($stmt->execute() === false) {
+                throw new ErrorException("Prep stmt error: " . $query);
+            }
+
             return $stmt;
-        } catch (Exception $e) {
-            throw new Exception($e->getMessage());
+        } catch (ErrorException $e) {
+            throw new ErrorException($e->getMessage());
         }
     }
 }

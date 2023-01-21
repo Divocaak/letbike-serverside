@@ -9,14 +9,9 @@ if (!isset($uri[4]) || !isset($uri[5])) {
     exit();
 }
 
-if(isset($_POST)){
-    $_POST = json_decode(file_get_contents("php://input"), true);
-}
-
 if ($uri[4] == 'item') {
     require PROJECT_ROOT_PATH . "/Controller/ItemController.php";
     $objFeedController = new ItemController();
-    // NOTE metody se musí jmenovat stejně jako cesty uri
     $objFeedController->{$uri[5]}();
 } else if ($uri[4] == "article") {
     require PROJECT_ROOT_PATH . "/Controller/ArticleController.php";
