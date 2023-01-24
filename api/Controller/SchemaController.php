@@ -3,30 +3,9 @@ class SchemaController extends BaseController
 {
     public function schema()
     {
-        $e = "";
-        if (strtoupper($_SERVER["REQUEST_METHOD"]) == "GET") {
-            try {
-                $responseData = json_encode($this->loopAllOptions("general"));
-            } catch (Error $err) {
-                $e = $err->getMessage();
-                $strErrorHeader = "HTTP/1.1 500 Internal Server Error";
-            }
-        } else {
-            $e = "Method not supported";
-            $strErrorHeader = "HTTP/1.1 422 Unprocessable Entity";
-        }
-
-        if (!$e) {
-            $this->sendOutput(
-                $responseData,
-                ["Content-Type: application/json", "HTTP/1.1 200 OK"]
-            );
-        } else {
-            $this->sendOutput(
-                json_encode(["error" => $e]),
-                ["Content-Type: application/json", $strErrorHeader]
-            );
-        }
+        $this->getMethod(function ($params) {
+            return ["schema" => $this->loopAllOptions("general")];
+        });
     }
 
     private function loopAllOptions($path)

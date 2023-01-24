@@ -6,7 +6,7 @@ class BaseController
      */
     public function __call($name, $arguments)
     {
-        $this->sendOutput('', array('HTTP/1.1 404 Not Found baseCOntroller'));
+        $this->sendOutput('', array('HTTP/1.1 404 Not Found baseController'));
     }
 
     /** 
@@ -65,6 +65,33 @@ class BaseController
             try {
                 $response = $method(json_decode(file_get_contents("php://input"), true));
                 $responseData = json_encode($response);
+            } catch (Error $err) {
+                $e = $err->getMessage();
+                $strErrorHeader = "HTTP/1.1 500 Internal Server Error";
+            }
+        } else {
+            $e = "Method not supported";
+            $strErrorHeader = "HTTP/1.1 422 Unprocessable Entity";
+        }
+
+        if (!$e) {
+            $this->sendOutput(
+                $responseData,
+                ["Content-Type: application/json", "HTTP/1.1 200 OK"]
+            );
+        } else {
+            $this->sendOutput(
+                json_encode(["error" => $e]),
+                ["Content-Type: application/json", $strErrorHeader]
+            );
+        }
+    }
+
+    protected function getMethod($method){
+        $e = "";
+        if (strtoupper($_SERVER["REQUEST_METHOD"]) == "GET") {
+            try {
+                $responseData = json_encode($method($this->getQueryStringParams()));
             } catch (Error $err) {
                 $e = $err->getMessage();
                 $strErrorHeader = "HTTP/1.1 500 Internal Server Error";

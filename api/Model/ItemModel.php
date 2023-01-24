@@ -7,7 +7,7 @@ class ItemModel extends Database
 {
     public function getItems($limit, $id_status, $id_seller = null, $id_buyer = null)
     {
-        // TODO params
+        // TODO API params
         $stmt = "SELECT i.id, i.id_seller, i.id_buyer, i.id_status, i.date_added, i.date_sold, i.name, i.description, i.price, i.imgs_folder,
             u.name AS seller_name, u.mail AS seller_mail, b.name AS buyer_name, b.mail AS buyer_mail
             FROM item i LEFT JOIN user b ON i.id_buyer=b.id INNER JOIN user u ON i.id_seller=u.id
@@ -47,7 +47,7 @@ class ItemModel extends Database
         return $toRet;
     }
 
-    // TODO params
+    // TODO API params
     public function addItem($id_user, $name, $description, $price, $imgs, $params)
     {
         try {
@@ -58,7 +58,7 @@ class ItemModel extends Database
         } catch (Error $e) {
             throw new Error($e->getMessage());
         }
-        return ["status" => true];
+        return true;
     }
 
     public function updateStatus($id_item, $id_status, $id_buyer = null)
